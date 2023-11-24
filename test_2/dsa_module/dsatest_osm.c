@@ -40,10 +40,10 @@ static uint64_t *data_buf[2][BUF_SIZE];
 dma_addr_t data_dma_buf[2][BUF_SIZE], comp_dma_buf[BUF_SIZE];
 
 // Modification By OSM : Module Parameter
-static int dsatest_run = 0;
-module_param(dsatest_run, int, S_IRUSR | S_IWUSR );
+int dsatest_run;
+//module_param(dsatest_run, int, S_IRUSR | S_IWUSR );
 
-static int dsatest_dsa_on = 0;
+int dsatest_dsa_on;
 module_param(dsatest_dsa_on, int, S_IRUSR | S_IWUSR );
 
 // Modification By OSM : kernel thread
@@ -325,6 +325,7 @@ int dsa_memcmp(dma_addr_t data_dma_buf[][BUF_SIZE], struct dsa_hw_desc *desc_buf
 		
 
 	pr_info("[info  ] running dsa offload\n");
+	pr_info("Run DSA MEMCMP\n");
 
 	for (i = 0; i < BUF_SIZE; i++) {
 		
@@ -383,6 +384,7 @@ int sw_memcmp(uint64_t *data_buf[2][BUF_SIZE])
 {
 	int status = 0;
 	int check = 1;
+	pr_info("Run SW_MEMCMP\n");
 	for(int i = 0; i < BUF_SIZE; i++)
 	{
 		status = (*data_buf[0][i] == *data_buf[1][i]);
@@ -551,6 +553,7 @@ static void set_workload(void)
 	
 	int i, j;
 
+	pr_info("Make 4KB Workload");
 	for (j = 0; j < BUF_SIZE; j++)
 		comp_buf[j] = dma_alloc_coherent(dev, idxd->data->compl_size, &comp_dma_buf[j], GFP_KERNEL);
 	for (i = 0; i < 2; i++) {
@@ -577,6 +580,7 @@ int kdsatestd_create(void *data)
 	struct dsa_hw_desc *desc_buf;
 	int status;
 
+	pr_info("Create kdsatestd");
 	desc_buf = kzalloc_node(BUF_SIZE * sizeof(*desc_buf), GFP_KERNEL, dev_to_node(dev));
 	status = 0;
 
@@ -595,6 +599,7 @@ int run_set(const char *val, const struct kernel_param *kp)
 	int res;
 
 	res = param_set_int(val, kp);
+	pr_info("Change dsatest_run[%d]", res);
 	
 	if(res){
 		set_workload();
@@ -625,8 +630,8 @@ int run_set(const char *val, const struct kernel_param *kp)
 }
 
 const struct kernel_param_ops param_ops_run = {
-	.set = run_set,
-	.get = param_get_int,
+	.set = &run_set,
+	.get = &param_get_int,
 };
 
 module_param_cb(dsatest_run, &param_ops_run, &dsatest_run, S_IRUSR | S_IWUSR );

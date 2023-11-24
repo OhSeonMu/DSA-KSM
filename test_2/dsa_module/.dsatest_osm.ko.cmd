@@ -1,0 +1,1 @@
+cmd_/home/osm/test_2/dsa_module/dsatest_osm.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/osm/test_2/dsa_module/dsatest_osm.ko /home/osm/test_2/dsa_module/dsatest_osm.o /home/osm/test_2/dsa_module/dsatest_osm.mod.o;  true
