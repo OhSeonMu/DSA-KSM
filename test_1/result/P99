@@ -1,0 +1,104 @@
+no_ksm_a_1000
+P99 LLC-miss-rate: 17.724647%
+P90 LLC-miss-rate: 1.022214%
+P50 LLC-miss-rate: 0.069667%
+ksm_a_1000
+P99 LLC-miss-rate: 23.036495%
+P90 LLC-miss-rate: 16.191641%
+P50 LLC-miss-rate: 10.353079%
+dsa_ksm_a_1000
+P99 LLC-miss-rate: 42.933385%
+P90 LLC-miss-rate: 38.738387%
+P50 LLC-miss-rate: 34.449926%
+no_ksm_b_1000
+P99 LLC-miss-rate: 6.564960%
+P90 LLC-miss-rate: 0.738937%
+P50 LLC-miss-rate: 0.063962%
+ksm_b_1000
+P99 LLC-miss-rate: 23.046983%
+P90 LLC-miss-rate: 15.003449%
+P50 LLC-miss-rate: 10.333616%
+dsa_ksm_b_1000
+P99 LLC-miss-rate: 42.127782%
+P90 LLC-miss-rate: 38.072539%
+P50 LLC-miss-rate: 31.373191%
+no_ksm_c_1000
+P99 LLC-miss-rate: 30.348358%
+P90 LLC-miss-rate: 1.273951%
+P50 LLC-miss-rate: 0.092957%
+ksm_c_1000
+P99 LLC-miss-rate: 24.819116%
+P90 LLC-miss-rate: 15.757927%
+P50 LLC-miss-rate: 11.285410%
+dsa_ksm_c_1000
+P99 LLC-miss-rate: 42.003898%
+P90 LLC-miss-rate: 38.541145%
+P50 LLC-miss-rate: 32.554210%
+no_ksm_d_1000
+P99 LLC-miss-rate: 16.125741%
+P90 LLC-miss-rate: 0.617810%
+P50 LLC-miss-rate: 0.062882%
+ksm_d_1000
+P99 LLC-miss-rate: 35.373750%
+P90 LLC-miss-rate: 16.576825%
+P50 LLC-miss-rate: 10.842579%
+dsa_ksm_d_1000
+P99 LLC-miss-rate: 43.118437%
+P90 LLC-miss-rate: 38.730923%
+P50 LLC-miss-rate: 34.656053%
+test_dsa_ksm_a_1000
+P99 LLC-miss-rate: 41.621238%
+P90 LLC-miss-rate: 39.465856%
+P50 LLC-miss-rate: 36.646594%
+test_ksm_a_1000
+P99 LLC-miss-rate: 22.468945%
+P90 LLC-miss-rate: 16.668917%
+P50 LLC-miss-rate: 10.892659%
+test_no_ksm_a_1000
+P99 LLC-miss-rate: 2.083276%
+P90 LLC-miss-rate: 0.125520%
+P50 LLC-miss-rate: 0.025102%
+test_dsa_ksm_a_1000
+P99 LLC-miss-rate: 42.935242%
+P90 LLC-miss-rate: 39.217489%
+P50 LLC-miss-rate: 32.728327%
+test_ksm_a_1000
+P99 LLC-miss-rate: 27.137854%
+P90 LLC-miss-rate: 16.314254%
+P50 LLC-miss-rate: 11.542628%
+test_no_ksm_a_1000
+P99 LLC-miss-rate: 3.193268%
+P90 LLC-miss-rate: 0.263792%
+P50 LLC-miss-rate: 0.030489%
+test_dsa_ksm_a_0
+P99 LLC-miss-rate: 26.573966%
+P90 LLC-miss-rate: 21.902891%
+P50 LLC-miss-rate: 11.860935%
+test_ksm_a_0
+P99 LLC-miss-rate: 26.741295%
+P90 LLC-miss-rate: 18.932720%
+P50 LLC-miss-rate: 9.199984%
+test_no_ksm_a_0
+P99 LLC-miss-rate: 29.012492%
+P90 LLC-miss-rate: 1.328749%
+P50 LLC-miss-rate: 0.075308%
+test_dsa_ksm_a_0
+P99 LLC-miss-rate: 25.602617%
+P90 LLC-miss-rate: 22.023553%
+P50 LLC-miss-rate: 11.375425%
+test_ksm_a_0
+P99 LLC-miss-rate: 24.271597%
+P90 LLC-miss-rate: 19.363525%
+P50 LLC-miss-rate: 7.809202%
+test_no_ksm_a_0
+P99 LLC-miss-rate: 5.466189%
+P90 LLC-miss-rate: 0.622229%
+P50 LLC-miss-rate: 0.061348%
+test_dsa_ksm_a_0
+P99 LLC-miss-rate: 28.855155%
+P90 LLC-miss-rate: 21.374930%
+P50 LLC-miss-rate: 10.771534%
+test_dsa_ksm_a_0
+P99 LLC-miss-rate: 13.135340%
+P90 LLC-miss-rate: 0.701409%
+P50 LLC-miss-rate: 0.042107%
