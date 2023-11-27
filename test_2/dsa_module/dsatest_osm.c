@@ -40,10 +40,9 @@ static uint64_t *data_buf[2][BUF_SIZE];
 dma_addr_t data_dma_buf[2][BUF_SIZE], comp_dma_buf[BUF_SIZE];
 
 // Modification By OSM : Module Parameter
-int dsatest_run;
-//module_param(dsatest_run, int, S_IRUSR | S_IWUSR );
-
+int dsatest_run = 0;
 int dsatest_dsa_on;
+
 module_param(dsatest_dsa_on, int, S_IRUSR | S_IWUSR );
 
 // Modification By OSM : kernel thread
@@ -51,7 +50,6 @@ static struct task_struct *kdsatestd_1;
 static struct task_struct *kdsatestd_2;
 static struct task_struct *kdsatestd_3;
 static struct task_struct *kdsatestd_4;
-
 
 static inline unsigned char
 _umwait(unsigned int state, unsigned long long timeout) {
@@ -338,7 +336,7 @@ int dsa_memcmp(dma_addr_t data_dma_buf[][BUF_SIZE], struct dsa_hw_desc *desc_buf
 		else
 			desc_buf[i].pasid = 0;
 		desc_buf[i].opcode = DSA_OPCODE_COMPARE;
-		desc_buf[i].flags = IDXD_OP_FLAG_RCR | IDXD_OP_FLAG_CRAV;
+		desc_buf[i].flags = IDXD_OP_FLAG_RCR | IDXD_OP_FLAG_CRAV | IDXD_OP_FLAG_CC ;
 		desc_buf[i].xfer_size = XFER_SIZE;
 		desc_buf[i].src_addr = data_dma_buf[0][i];
 		desc_buf[i].dst_addr = data_dma_buf[1][i];
@@ -375,7 +373,9 @@ int dsa_memcmp(dma_addr_t data_dma_buf[][BUF_SIZE], struct dsa_hw_desc *desc_buf
 			break;
 		}
 	}
-
+	
+	if( status != 1)
+		pr_err("cache error\n");
 	return status;
 }
 
@@ -529,7 +529,6 @@ static int __init dsatest_init(void)
 	//Modificatio By OSM
 	//dsatest_main();
 	
-
 	filp_close(filp, NULL);
 	pr_err("End memcmp\n");
 	return 0;
@@ -546,7 +545,7 @@ module_exit(dsatest_exit);
  * Modification By OSM for using kthread
  */
 
-static void set_workload(void)
+static int set_workload(void)
 {
 	struct idxd_device *idxd = wq->idxd;
 	struct device *dev = &idxd->pdev->dev;
@@ -556,6 +555,7 @@ static void set_workload(void)
 	pr_info("Make 4KB Workload");
 	for (j = 0; j < BUF_SIZE; j++)
 		comp_buf[j] = dma_alloc_coherent(dev, idxd->data->compl_size, &comp_dma_buf[j], GFP_KERNEL);
+	
 	for (i = 0; i < 2; i++) {
 		for (j = 0; j < BUF_SIZE; j++) {
 			data_buf[i][j] = (uint64_t *)kmalloc(XFER_SIZE, GFP_KERNEL);
@@ -570,9 +570,11 @@ static void set_workload(void)
 		cflush((char*)data_buf[0][j], XFER_SIZE);
 		cflush((char*)data_buf[1][j], XFER_SIZE);
 	}
+	pr_info("End 4KB Workload");
+	return 0;
 }
 
-int kdsatestd_create(void *data)
+static int kdsatestd_create(void *data)
 {
 	struct idxd_device *idxd = wq->idxd;
 	struct device *dev = &idxd->pdev->dev;
@@ -583,14 +585,18 @@ int kdsatestd_create(void *data)
 	pr_info("Create kdsatestd");
 	desc_buf = kzalloc_node(BUF_SIZE * sizeof(*desc_buf), GFP_KERNEL, dev_to_node(dev));
 	status = 0;
+	
+	ssleep(1);
 
 	while(!kthread_should_stop()) {
 		if(dsatest_dsa_on)
 			status = dsa_memcmp(data_dma_buf, desc_buf, comp_buf, comp_dma_buf, wq_portal, idxd);
 		else
 			status = sw_memcmp(data_buf);
+		ssleep(0.01);
 	}
 	
+	pr_info("Delete kdsatestd");
 	return status;
 }
 
@@ -599,33 +605,41 @@ int run_set(const char *val, const struct kernel_param *kp)
 	int res;
 
 	res = param_set_int(val, kp);
-	pr_info("Change dsatest_run[%d]", res);
-	
-	if(res){
-		set_workload();
+	pr_info("Change dsatest_run[%d]", dsatest_run);
 
-		kdsatestd_1 = kthread_create(kdsatestd_create, NULL, "kdsatestd_1");
-		kdsatestd_2 = kthread_create(kdsatestd_create, NULL, "kdsatestd_2");
-		kdsatestd_3 = kthread_create(kdsatestd_create, NULL, "kdsatestd_3");
-		kdsatestd_4 = kthread_create(kdsatestd_create, NULL, "kdsatestd_4");
+	if(res == 0){	
+		if(dsatest_run == 1){
+			set_workload();
+			pr_info("Success set_workload");
 
-		kthread_bind(kdsatestd_1, 0);
-		kthread_bind(kdsatestd_2, 1);
-		kthread_bind(kdsatestd_3, 2);
-		kthread_bind(kdsatestd_4, 3);
+			kdsatestd_1 = kthread_create(kdsatestd_create, NULL, "kdsatestd_1");
+			kdsatestd_2 = kthread_create(kdsatestd_create, NULL, "kdsatestd_2");
+			kdsatestd_3 = kthread_create(kdsatestd_create, NULL, "kdsatestd_3");
+			kdsatestd_4 = kthread_create(kdsatestd_create, NULL, "kdsatestd_4");
+			
+			pr_info("Success kthred_create");
 
-		wake_up_process(kdsatestd_1);
-		wake_up_process(kdsatestd_2);
-		wake_up_process(kdsatestd_3);
-		wake_up_process(kdsatestd_4);
+			kthread_bind(kdsatestd_1, 0);
+			kthread_bind(kdsatestd_2, 1);
+			kthread_bind(kdsatestd_3, 2);
+			kthread_bind(kdsatestd_4, 3);
+			pr_info("Success kthred_bind");
+
+			wake_up_process(kdsatestd_1);
+			wake_up_process(kdsatestd_2);
+			wake_up_process(kdsatestd_3);
+			wake_up_process(kdsatestd_4);
+			pr_info("Success kthred_wake_up");
+		}
+		else{
+			kthread_stop(kdsatestd_1);
+			kthread_stop(kdsatestd_2);
+			kthread_stop(kdsatestd_3);
+			kthread_stop(kdsatestd_4);
+			
+			pr_info("Success kthred_stop");
+		}
 	}
-	else{
-		kthread_stop(kdsatestd_1);
-		kthread_stop(kdsatestd_2);
-		kthread_stop(kdsatestd_3);
-		kthread_stop(kdsatestd_4);
-	}
-
 	return res;
 }
 
