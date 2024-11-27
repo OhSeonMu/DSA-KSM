@@ -1,0 +1,774 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	options.c	/^double A = A_PARAM;$/;"	v
+ALPHA	omp-csr/omp-csr.c	28;"	d	file:
+A_PARAM	options.h	12;"	d
+B	options.c	/^double B = B_PARAM;$/;"	v
+BETA	omp-csr/omp-csr.c	29;"	d	file:
+BIN	Makefile	/^BIN = xmt-csr\/xmt-csr xmt-csr-local\/xmt-csr-local$/;"	m
+BIN	Makefile	/^BIN=seq-list\/seq-list seq-csr\/seq-csr make-edgelist$/;"	m
+BITMAPSIZE	mpi/common.h	183;"	d
+BITMAP_H	omp-csr/bitmap.h	4;"	d
+BIT_OFFSET	omp-csr/bitmap.h	18;"	d
+BUILD_OPENMP	Makefile	/^BUILD_OPENMP = No$/;"	m
+BUILD_XMT	Makefile	/^BUILD_XMT = No$/;"	m
+B_PARAM	options.h	13;"	d
+C	options.c	/^double C = C_PARAM;$/;"	v
+CFLAGS	Makefile	/^make-edgelist: CFLAGS:=$(CFLAGS) $(CFLAGS_OPENMP)$/;"	m
+CFLAGS	Makefile	/^omp-csr\/omp-csr-old: CFLAGS:=$(CFLAGS) $(CFLAGS_OPENMP)$/;"	m
+CFLAGS	Makefile	/^omp-csr\/omp-csr: CFLAGS:=$(CFLAGS) $(CFLAGS_OPENMP)$/;"	m
+CFLAGS	Makefile	/^xmt-csr-local\/xmt-csr-local: CFLAGS:=$(CFLAGS) -pl xmt-csr-local\/xmt-csr-local.pl$/;"	m
+CFLAGS	Makefile	/^xmt-csr\/xmt-csr: CFLAGS:=$(CFLAGS) -pl xmt-csr\/xmt-csr.pl$/;"	m
+CFLAGS	mpi/Makefile	/^CFLAGS = -fopenmp -g -Wall -Drestrict=__restrict__ -O3 -DNDEBUG -ffast-math -DGRAPH_GENERATOR_MPI # -g -pg$/;"	m
+CHECK_MPI_REQS	mpi/bfs_simple.c	112;"	d	file:
+CHECK_MPI_REQS	mpi/bfs_simple.c	241;"	d	file:
+CHUNKSIZE	mpi/common.h	179;"	d
+COMMON_H	mpi/common.h	11;"	d
+COMPAT_HEADER_	compat.h	5;"	d
+CONV1D_BUILD_FINAL_DATA_STRUCTURE_FROM_GRAPH_SO_FAR	mpi/oned_csc.c	192;"	d	file:
+CONV1D_BUILD_FINAL_DATA_STRUCTURE_FROM_GRAPH_SO_FAR	mpi/oned_csr.c	173;"	d	file:
+CONV1D_CALL_ON_EDGES	mpi/oned_csc.c	146;"	d	file:
+CONV1D_CALL_ON_EDGES	mpi/oned_csr.c	134;"	d	file:
+CONV1D_CLEAR_GRAPH_SO_FAR	mpi/oned_csc.c	205;"	d	file:
+CONV1D_CLEAR_GRAPH_SO_FAR	mpi/oned_csr.c	183;"	d	file:
+CONV1D_DECLARE_AND_INIT_GRAPH_SO_FAR	mpi/oned_csc.c	142;"	d	file:
+CONV1D_DECLARE_AND_INIT_GRAPH_SO_FAR	mpi/oned_csr.c	130;"	d	file:
+CONV1D_EDGE_BUFFER_MPI_TYPE	mpi/oned_csc.c	157;"	d	file:
+CONV1D_EDGE_BUFFER_MPI_TYPE	mpi/oned_csr.c	145;"	d	file:
+CONV1D_EDGE_BUFFER_TYPE	mpi/oned_csc.c	154;"	d	file:
+CONV1D_EDGE_BUFFER_TYPE	mpi/oned_csr.c	142;"	d	file:
+CONV1D_EXTRA_PARAMS	mpi/oned_csc.c	139;"	d	file:
+CONV1D_EXTRA_PARAMS	mpi/oned_csr.c	127;"	d	file:
+CONV1D_FREE_PRECOMPRESSED_DATA	mpi/oned_csc.c	188;"	d	file:
+CONV1D_FREE_PRECOMPRESSED_DATA	mpi/oned_csr.c	169;"	d	file:
+CONV1D_FUNCNAME	mpi/oned_csc.c	136;"	d	file:
+CONV1D_FUNCNAME	mpi/oned_csr.c	124;"	d	file:
+CONV1D_MERGE_INTO_GRAPH_SO_FAR	mpi/oned_csc.c	179;"	d	file:
+CONV1D_MERGE_INTO_GRAPH_SO_FAR	mpi/oned_csr.c	160;"	d	file:
+CONV1D_PRECOMPRESS_INCOMING_DATA	mpi/oned_csc.c	160;"	d	file:
+CONV1D_PRECOMPRESS_INCOMING_DATA	mpi/oned_csr.c	148;"	d	file:
+CONV1D_WRITE_EDGE_FLIPPED	mpi/oned_csc.c	151;"	d	file:
+CONV1D_WRITE_EDGE_FLIPPED	mpi/oned_csr.c	139;"	d	file:
+CONV1D_WRITE_EDGE_NORMAL	mpi/oned_csc.c	149;"	d	file:
+CONV1D_WRITE_EDGE_NORMAL	mpi/oned_csr.c	137;"	d	file:
+C_PARAM	options.h	14;"	d
+CodeHighlightOff	Graph500.html	/^ function CodeHighlightOff(elem, id)$/;"	f
+CodeHighlightOn	Graph500.html	/^ function CodeHighlightOn(elem, id)$/;"	f
+D	options.c	/^double D = 1.0 - (A_PARAM + B_PARAM + C_PARAM);$/;"	v
+DIV_SIZE	mpi/common.h	34;"	d
+DIV_SIZE	mpi/common.h	41;"	d
+EMULATE_ONE_SIDED	mpi/mpi_workarounds.h	36;"	d
+FAST_64BIT_ARITHMETIC	generator/user_settings.h	18;"	d
+FILE_CHUNKSIZE	mpi/common.h	58;"	d
+FIND_MPI_INT_TYPE	mpi/mpi_workarounds.h	23;"	d
+FIND_MPI_UINT_TYPE	mpi/mpi_workarounds.h	24;"	d
+GENERATOR_SOURCES	mpi/Makefile	/^GENERATOR_SOURCES = ..\/generator\/graph_generator.c ..\/generator\/make_graph.c ..\/generator\/splittable_mrg.c ..\/generator\/utils.c$/;"	m
+GENERATOR_SRCS	Makefile	/^GENERATOR_SRCS=splittable_mrg.c	\\$/;"	m
+GENERATOR_USE_PACKED_EDGE_TYPE	generator/user_settings.h	16;"	d
+GRAPH500_HEADER_	graph500.h	5;"	d
+GRAPH500_SOURCES	Makefile	/^GRAPH500_SOURCES=graph500.c options.c rmat.c kronecker.c verify.c prng.c \\$/;"	m
+GRAPH_GENERATOR_H	generator/graph_generator.h	11;"	d
+HALF_CHUNKSIZE	mpi/common.h	180;"	d
+HEADERS	mpi/Makefile	/^HEADERS = common.h oned_csr.h oned_csc.h redistribute.h mpi_workarounds.h onesided.h$/;"	m
+IJ	graph500.c	/^static packed_edge * restrict IJ;$/;"	v	file:
+IJ	make-edgelist.c	/^static struct packed_edge * restrict IJ;$/;"	v	typeref:struct:restrict	file:
+IJ	seq-list/seq-list.c	/^static const struct packed_edge * restrict IJ;$/;"	v	typeref:struct:restrict	file:
+INITIATOR_A_NUMERATOR	generator/graph_generator.c	27;"	d	file:
+INITIATOR_BC_NUMERATOR	generator/graph_generator.c	28;"	d	file:
+INITIATOR_DENOMINATOR	generator/graph_generator.c	29;"	d	file:
+ITERATE_TUPLE_GRAPH_BEGIN	mpi/common.h	66;"	d
+ITERATE_TUPLE_GRAPH_BLOCK_COUNT	mpi/common.h	61;"	d
+ITERATE_TUPLE_GRAPH_BLOCK_NUMBER	mpi/common.h	109;"	d
+ITERATE_TUPLE_GRAPH_BREAK	mpi/common.h	110;"	d
+ITERATE_TUPLE_GRAPH_END	mpi/common.h	124;"	d
+ITERATE_TUPLE_GRAPH_RELEASE_BUFFER	mpi/common.h	113;"	d
+KRONECKER_HEADER_	kronecker.h	2;"	d
+LDFLAGS	mpi/Makefile	/^LDFLAGS = -fopenmp -g # -g -pg$/;"	m
+MAKE_EDGELIST_SOURCES	Makefile	/^MAKE_EDGELIST_SOURCES=make-edgelist.c options.c rmat.c kronecker.c prng.c \\$/;"	m
+MAKE_GRAPH_H	generator/make_graph.h	11;"	d
+MAKE_RANDPERMUTE	rmat.c	/^MAKE_RANDPERMUTE(randpermute_int64_t, int64_t, take_i64, release_i64)$/;"	f
+MAKE_RANDPERMUTE	rmat.c	127;"	d	file:
+MAKE_RANDPERMUTE	rmat.c	152;"	d	file:
+MAKE_RANDPERMUTE	rmat.c	84;"	d	file:
+MAKE_REDISTRIBUTE_FUNC	mpi/oned_csc.c	/^static MAKE_REDISTRIBUTE_FUNC(CONV1D_FUNCNAME, CONV1D_EXTRA_PARAMS, CONV1D_DECLARE_AND_INIT_GRAPH_SO_FAR, CONV1D_CALL_ON_EDGES, CONV1D_EDGE_BUFFER_TYPE, CONV1D_EDGE_BUFFER_MPI_TYPE, CONV1D_PRECOMPRESS_INCOMING_DATA, CONV1D_MERGE_INTO_GRAPH_SO_FAR, CONV1D_FREE_PRECOMPRESSED_DATA, CONV1D_BUILD_FINAL_DATA_STRUCTURE_FROM_GRAPH_SO_FAR, CONV1D_CLEAR_GRAPH_SO_FAR)$/;"	f	file:
+MAKE_REDISTRIBUTE_FUNC	mpi/oned_csr.c	/^static MAKE_REDISTRIBUTE_FUNC(CONV1D_FUNCNAME, CONV1D_EXTRA_PARAMS, CONV1D_DECLARE_AND_INIT_GRAPH_SO_FAR, CONV1D_CALL_ON_EDGES, CONV1D_EDGE_BUFFER_TYPE, CONV1D_EDGE_BUFFER_MPI_TYPE, CONV1D_PRECOMPRESS_INCOMING_DATA, CONV1D_MERGE_INTO_GRAPH_SO_FAR, CONV1D_FREE_PRECOMPRESSED_DATA, CONV1D_BUILD_FINAL_DATA_STRUCTURE_FROM_GRAPH_SO_FAR, CONV1D_CLEAR_GRAPH_SO_FAR)$/;"	f	file:
+MAKE_REDISTRIBUTE_FUNC	mpi/redistribute.h	35;"	d
+MAKE_REDISTRIBUTE_FUNC_COUNT_EDGE_BY_OWNER	mpi/redistribute.h	26;"	d
+MAKE_REDISTRIBUTE_FUNC_STORE_EDGE_TO_BUFFER	mpi/redistribute.h	29;"	d
+MAP_ANONYMOUS	xalloc.c	69;"	d	file:
+MAP_HUGETLB	xalloc.c	29;"	d	file:
+MAP_NOSYNC	xalloc.c	25;"	d	file:
+MAP_POPULATE	xalloc.c	22;"	d	file:
+MAX_LARGE	xalloc.c	35;"	d	file:
+MINVECT_SIZE	omp-csr/omp-csr-old.c	22;"	d	file:
+MINVECT_SIZE	omp-csr/omp-csr.c	26;"	d	file:
+MINVECT_SIZE	seq-csr/seq-csr.c	18;"	d	file:
+MINVECT_SIZE	xmt-csr-local/xmt-csr-local.c	18;"	d	file:
+MINVECT_SIZE	xmt-csr/xmt-csr.c	18;"	d	file:
+MOD_ARITH_32BIT_H	generator/mod_arith_32bit.h	11;"	d
+MOD_ARITH_64BIT_H	generator/mod_arith_64bit.h	11;"	d
+MOD_ARITH_H	generator/mod_arith.h	11;"	d
+MOD_ARITH_XMT_H	generator/mod_arith_xmt.h	11;"	d
+MOD_SIZE	mpi/common.h	33;"	d
+MOD_SIZE	mpi/common.h	40;"	d
+MPICC	mpi/Makefile	/^MPICC = mpicc$/;"	m
+MPI_AINT	mpi/mpi_workarounds.h	30;"	d
+MPI_INT64_T	mpi/mpi_workarounds.h	26;"	d
+MPI_UINT16_T	mpi/mpi_workarounds.h	29;"	d
+MPI_UINT32_T	mpi/mpi_workarounds.h	28;"	d
+MPI_UINT64_T	mpi/mpi_workarounds.h	27;"	d
+MPI_WORKAROUNDS_H	mpi/mpi_workarounds.h	11;"	d
+MTA	compat.h	47;"	d
+MTA	compat.h	49;"	d
+MUL_SIZE	mpi/common.h	35;"	d
+MUL_SIZE	mpi/common.h	42;"	d
+NAME	graph500.h	7;"	d
+NBFS	options.c	/^int NBFS = NBFS_max;$/;"	v
+NBFS_max	options.h	19;"	d
+NPACK	xmt-csr-local/xmt-csr-local.c	200;"	d	file:
+NRAND	rmat.c	179;"	d	file:
+NSTAT	graph500.c	228;"	d	file:
+OMP	compat.h	31;"	d
+OMP	compat.h	34;"	d
+OMP	generator/utils.c	32;"	d	file:
+OMP	generator/utils.c	34;"	d	file:
+ONED_CSC_H	mpi/oned_csc.h	11;"	d
+ONED_CSR_H	mpi/oned_csr.h	11;"	d
+ONESIDED_H	mpi/onesided.h	17;"	d
+OPTIONS_HEADER_	options.h	5;"	d
+PRINT_STATS	graph500.c	229;"	d	file:
+PRId64	compat.h	17;"	d
+PRId64	compat.h	23;"	d
+PRNG_HEADER_	prng.h	5;"	d
+REDISTRIBUTE_H	mpi/redistribute.h	11;"	d
+RMAT_HEADER_	rmat.h	5;"	d
+SCALE	options.c	/^int64_t SCALE = default_SCALE;$/;"	v
+SCNd64	compat.h	18;"	d
+SCNd64	compat.h	24;"	d
+SET_IN	mpi/bfs_replicated.c	115;"	d	file:
+SET_IN	mpi/bfs_replicated_csc.c	104;"	d	file:
+SET_VISITED	mpi/bfs_simple.c	81;"	d	file:
+SET_VISITED_LOCAL	mpi/bfs_replicated.c	119;"	d	file:
+SET_VISITED_LOCAL	mpi/bfs_replicated_csc.c	109;"	d	file:
+SOURCES	mpi/Makefile	/^SOURCES = main.c oned_csr.c oned_csc.c utils.c validate.c onesided.c onesided_emul.c$/;"	m
+SPK_NOISE_LEVEL	generator/graph_generator.c	38;"	d	file:
+SPLITTABLE_MRG_H	generator/splittable_mrg.h	11;"	d
+SWIZZLE_VERTEX	mpi/bfs_replicated.c	94;"	d	file:
+SWIZZLE_VERTEX	mpi/oned_csc.h	30;"	d
+TAS_VISITED_LOCAL	mpi/bfs_replicated_csc.c	107;"	d	file:
+TEST_IN	mpi/bfs_replicated.c	116;"	d	file:
+TEST_IN	mpi/bfs_replicated_csc.c	105;"	d	file:
+TEST_VISITED	mpi/bfs_simple.c	82;"	d	file:
+TEST_VISITED_LOCAL	mpi/bfs_replicated.c	117;"	d	file:
+TEST_VISITED_LOCAL	mpi/bfs_replicated_csc.c	106;"	d	file:
+THREAD_BUF_LEN	omp-csr/omp-csr-old.c	254;"	d	file:
+THREAD_BUF_LEN	omp-csr/omp-csr.c	27;"	d	file:
+TICTOC_CLOCK	timer.c	22;"	d	file:
+TICTOC_CLOCK	timer.c	25;"	d	file:
+TICTOC_CLOCK_NAME	timer.c	23;"	d	file:
+TICTOC_CLOCK_NAME	timer.c	26;"	d	file:
+TIME	timer.h	14;"	d
+TIMER_HEADER_	timer.h	5;"	d
+ULONG_BITS	mpi/oned_csc.h	16;"	d
+UNSWIZZLE_VERTEX	mpi/oned_csc.h	31;"	d
+USER_SETTINGS_H	generator/user_settings.h	11;"	d
+USE_GCC_BYTESWAP	generator/graph_generator.c	85;"	d	file:
+UTILS_H	generator/utils.h	11;"	d
+VERBOSE	options.c	/^int VERBOSE = 0;$/;"	v
+VERIFY_HEADER_	verify.h	5;"	d
+VERSION	graph500.h	8;"	d
+VERTEX_LOCAL	mpi/common.h	37;"	d
+VERTEX_LOCAL	mpi/common.h	44;"	d
+VERTEX_OWNER	mpi/common.h	36;"	d
+VERTEX_OWNER	mpi/common.h	43;"	d
+VERTEX_TO_GLOBAL	mpi/common.h	38;"	d
+VERTEX_TO_GLOBAL	mpi/common.h	45;"	d
+WORD_OFFSET	omp-csr/bitmap.h	17;"	d
+XALLOC_HEADER_	xalloc.h	5;"	d
+XENDOFF	omp-csr/omp-csr-old.c	67;"	d	file:
+XENDOFF	omp-csr/omp-csr.c	74;"	d	file:
+XENDOFF	seq-csr/seq-csr.c	57;"	d	file:
+XENDOFF	xmt-csr-local/xmt-csr-local.c	61;"	d	file:
+XENDOFF	xmt-csr/xmt-csr.c	61;"	d	file:
+XOFF	omp-csr/omp-csr-old.c	66;"	d	file:
+XOFF	omp-csr/omp-csr.c	73;"	d	file:
+XOFF	seq-csr/seq-csr.c	56;"	d	file:
+XOFF	xmt-csr-local/xmt-csr-local.c	60;"	d	file:
+XOFF	xmt-csr/xmt-csr.c	60;"	d	file:
+_FILE_OFFSET_BITS	compat.h	7;"	d
+_FILE_OFFSET_BITS	seq-csr/seq-csr.c	4;"	d	file:
+_FILE_OFFSET_BITS	seq-list/seq-list.c	4;"	d	file:
+_FILE_OFFSET_BITS	xmt-csr-local/xmt-csr-local.c	4;"	d	file:
+_FILE_OFFSET_BITS	xmt-csr/xmt-csr.c	4;"	d	file:
+_GNU_SOURCE	mpi/bfs_replicated.c	10;"	d	file:
+_GNU_SOURCE	mpi/bfs_replicated_csc.c	10;"	d	file:
+_SVID_SOURCE	compat.h	11;"	d
+_THREAD_SAFE	compat.h	8;"	d
+_THREAD_SAFE	seq-csr/seq-csr.c	5;"	d	file:
+_THREAD_SAFE	seq-list/seq-list.c	5;"	d	file:
+_THREAD_SAFE	xmt-csr-local/xmt-csr-local.c	5;"	d	file:
+_THREAD_SAFE	xmt-csr/xmt-csr.c	5;"	d	file:
+_XOPEN_SOURCE	compat.h	9;"	d
+_XOPEN_SOURCE_EXTENDED	compat.h	10;"	d
+__STDC_CONSTANT_MACROS	generator/utils.c	11;"	d	file:
+__STDC_FORMAT_MACROS	generator/generator_test_mpi.c	14;"	d	file:
+__STDC_FORMAT_MACROS	generator/generator_test_omp.c	14;"	d	file:
+__STDC_FORMAT_MACROS	generator/generator_test_seq.c	14;"	d	file:
+__STDC_FORMAT_MACROS	generator/generator_test_xmt.c	14;"	d	file:
+__STDC_FORMAT_MACROS	generator/graph_generator.c	15;"	d	file:
+__STDC_FORMAT_MACROS	generator/graph_generator.h	19;"	d
+__STDC_FORMAT_MACROS	generator/splittable_mrg.c	13;"	d	file:
+__STDC_FORMAT_MACROS	mpi/main.c	16;"	d	file:
+__STDC_LIMIT_MACROS	mpi/main.c	13;"	d	file:
+a	generator/splittable_mrg.c	/^  uint_fast32_t a, b, c, d;$/;"	m	struct:mrg_transition_matrix	file:
+abort_handler	xalloc.c	/^abort_handler (int passthrough)$/;"	f	file:
+add_gather_request	mpi/onesided.c	/^void add_gather_request(gather* g, size_t local_idx, int remote_rank, size_t remote_idx, size_t req_id) {$/;"	f
+add_gather_request	mpi/onesided_emul.c	/^void add_gather_request(gather* g, size_t local_idx, int remote_rank, size_t remote_idx, size_t req_id) {$/;"	f
+add_scatter_constant_request	mpi/onesided.c	/^void add_scatter_constant_request(scatter_constant* sc, int remote_rank, size_t remote_idx, size_t req_id) {$/;"	f
+add_scatter_constant_request	mpi/onesided_emul.c	/^void add_scatter_constant_request(scatter_constant* sc, int remote_rank, size_t remote_idx, size_t req_id) {$/;"	f
+add_scatter_request	mpi/onesided.c	/^void add_scatter_request(scatter* sc, const char* local_data, int remote_rank, size_t remote_idx, size_t req_id) {$/;"	f
+add_scatter_request	mpi/onesided_emul.c	/^void add_scatter_request(scatter* sc, const char* local_data, int remote_rank, size_t remote_idx, size_t req_id) {$/;"	f
+alloc_graph	omp-csr/omp-csr-old.c	/^alloc_graph (int64_t nedge)$/;"	f	file:
+alloc_graph	omp-csr/omp-csr.c	/^alloc_graph (int64_t nedge)$/;"	f	file:
+alloc_graph	seq-csr/seq-csr.c	/^alloc_graph (int64_t nedge)$/;"	f	file:
+alloc_graph	xmt-csr-local/xmt-csr-local.c	/^alloc_graph (int64_t nedge)$/;"	f	file:
+alloc_graph	xmt-csr/xmt-csr.c	/^alloc_graph (int64_t nedge)$/;"	f	file:
+allocate_memory	mpi/bfs_replicated.c	/^static void allocate_memory(void) {$/;"	f	file:
+allocate_memory	mpi/bfs_replicated_csc.c	/^static void allocate_memory(void) {$/;"	f	file:
+array	mpi/onesided.c	/^  void* array;$/;"	m	struct:scatter	file:
+array	mpi/onesided.c	/^  void* array;$/;"	m	struct:scatter_constant	file:
+array	mpi/onesided_emul.c	/^  void* array;$/;"	m	struct:scatter	file:
+array	mpi/onesided_emul.c	/^  void* array;$/;"	m	struct:scatter_constant	file:
+array_count	mpi/onesided_emul.c	/^  size_t array_count;$/;"	m	struct:scatter	file:
+array_count	mpi/onesided_emul.c	/^  size_t array_count;$/;"	m	struct:scatter_constant	file:
+b	generator/splittable_mrg.c	/^  uint_fast32_t a, b, c, d;$/;"	m	struct:mrg_transition_matrix	file:
+begin_gather	mpi/onesided.c	/^void begin_gather(gather* g) {$/;"	f
+begin_gather	mpi/onesided_emul.c	/^void begin_gather(gather* g) {$/;"	f
+begin_scatter	mpi/onesided.c	/^void begin_scatter(scatter* sc) {$/;"	f
+begin_scatter	mpi/onesided_emul.c	/^void begin_scatter(scatter* sc) {$/;"	f
+begin_scatter_constant	mpi/onesided.c	/^void begin_scatter_constant(scatter_constant* sc) {$/;"	f
+begin_scatter_constant	mpi/onesided_emul.c	/^void begin_scatter_constant(scatter_constant* sc) {$/;"	f
+bfs_bottom_up_step	omp-csr/omp-csr.c	/^bfs_bottom_up_step(int64_t *bfs_tree, bitmap_t *past, bitmap_t *next)$/;"	f	file:
+bfs_nedge	graph500.c	/^static int64_t bfs_nedge[NBFS_max];$/;"	v	file:
+bfs_root	graph500.c	/^static int64_t bfs_root[NBFS_max];$/;"	v	file:
+bfs_root	make-edgelist.c	/^static int64_t bfs_root[NBFS_max];$/;"	v	file:
+bfs_time	graph500.c	/^static double bfs_time[NBFS_max];$/;"	v	file:
+bfs_top_down_step	omp-csr/omp-csr.c	/^bfs_top_down_step(int64_t *bfs_tree, int64_t *vlist, int64_t *local, int64_t *k1_p, int64_t *k2_p)$/;"	f	file:
+bfs_writes_depth_map	mpi/bfs_custom.c	/^int bfs_writes_depth_map(void) {$/;"	f
+bfs_writes_depth_map	mpi/bfs_one_sided.c	/^int bfs_writes_depth_map(void) {$/;"	f
+bfs_writes_depth_map	mpi/bfs_replicated.c	/^int bfs_writes_depth_map(void) {return 1;}$/;"	f
+bfs_writes_depth_map	mpi/bfs_replicated_csc.c	/^int bfs_writes_depth_map(void) {$/;"	f
+bfs_writes_depth_map	mpi/bfs_simple.c	/^int bfs_writes_depth_map(void) {$/;"	f
+bitmap_t	omp-csr/bitmap.h	/^} bitmap_t;$/;"	t	typeref:struct:__anon1
+bitreverse	generator/graph_generator.c	/^static inline uint64_t bitreverse(uint64_t x) {$/;"	f	file:
+bm_free	omp-csr/bitmap.h	/^bm_free(bitmap_t* bm)$/;"	f
+bm_get_bit	omp-csr/bitmap.h	/^bm_get_bit(bitmap_t* bm, long pos)$/;"	f
+bm_get_next_bit	omp-csr/bitmap.h	/^bm_get_next_bit(bitmap_t* bm, long pos)$/;"	f
+bm_init	omp-csr/bitmap.h	/^bm_init(bitmap_t* bm, int size)$/;"	f
+bm_reset	omp-csr/bitmap.h	/^bm_reset(bitmap_t* bm)$/;"	f
+bm_set_bit	omp-csr/bitmap.h	/^bm_set_bit(bitmap_t* bm, long pos)$/;"	f
+bm_set_bit_atomic	omp-csr/bitmap.h	/^bm_set_bit_atomic(bitmap_t* bm, long pos)$/;"	f
+bm_swap	omp-csr/bitmap.h	/^static inline void bm_swap(bitmap_t* a, bitmap_t* b)$/;"	f
+build_bfs_depth_map	mpi/validate.c	/^static int build_bfs_depth_map(const int64_t nglobalverts, const size_t nlocalverts, const size_t maxlocalverts, const int64_t root, int64_t* const pred) {$/;"	f	file:
+c	generator/splittable_mrg.c	/^  uint_fast32_t a, b, c, d;$/;"	m	struct:mrg_transition_matrix	file:
+check_bfs_depth_map_using_predecessors	mpi/validate.c	/^static int check_bfs_depth_map_using_predecessors(const tuple_graph* const tg, const int64_t nglobalverts, const size_t nlocalverts, const size_t maxlocalverts, const int64_t root, const int64_t* const pred) {$/;"	f	file:
+check_value_ranges	mpi/validate.c	/^static int check_value_ranges(const int64_t nglobalverts, const size_t nlocalverts, const int64_t* const pred) {$/;"	f	file:
+cleanup_globals	mpi/utils.c	/^void cleanup_globals(void) {$/;"	f
+coalescing_size	mpi/bfs_simple.c	/^static const int coalescing_size = 256;$/;"	v	file:
+column	mpi/oned_csc.c	/^  int64_t* restrict column;$/;"	m	struct:temp_csc_graph	file:
+column	mpi/oned_csc.h	/^  int64_t *column;$/;"	m	struct:oned_csc_graph
+column	mpi/oned_csr.c	/^  int64_t* restrict column;$/;"	m	struct:temp_csr_graph	file:
+column	mpi/oned_csr.h	/^  int64_t *column;$/;"	m	struct:oned_csr_graph
+comm	mpi/onesided_emul.c	/^  MPI_Comm comm;$/;"	m	struct:gather	file:
+comm	mpi/onesided_emul.c	/^  MPI_Comm comm;$/;"	m	struct:scatter	file:
+comm	mpi/onesided_emul.c	/^  MPI_Comm comm;$/;"	m	struct:scatter_constant	file:
+comm_size	mpi/onesided_emul.c	/^  int comm_size;$/;"	m	struct:gather	file:
+comm_size	mpi/onesided_emul.c	/^  int comm_size;$/;"	m	struct:scatter	file:
+comm_size	mpi/onesided_emul.c	/^  int comm_size;$/;"	m	struct:scatter_constant	file:
+compare_doubles	mpi/main.c	/^static int compare_doubles(const void* a, const void* b) {$/;"	f	file:
+compute_edge_range	generator/make_graph.c	/^static void compute_edge_range(int rank, int size, int64_t M, int64_t* start_idx, int64_t* end_idx) {$/;"	f	file:
+compute_levels	verify.c	/^compute_levels (int64_t * level,$/;"	f	file:
+constant	mpi/onesided.c	/^  void* constant;$/;"	m	struct:scatter_constant	file:
+constant	mpi/onesided_emul.c	/^  void* constant;$/;"	m	struct:scatter_constant	file:
+construction_time	graph500.c	/^static double construction_time;$/;"	v	file:
+create_graph_from_edgelist	omp-csr/omp-csr-old.c	/^create_graph_from_edgelist (struct packed_edge *IJ, int64_t nedge)$/;"	f
+create_graph_from_edgelist	omp-csr/omp-csr.c	/^create_graph_from_edgelist (struct packed_edge *IJ, int64_t nedge)$/;"	f
+create_graph_from_edgelist	seq-csr/seq-csr.c	/^create_graph_from_edgelist (struct packed_edge *IJ, int64_t nedge)$/;"	f
+create_graph_from_edgelist	seq-list/seq-list.c	/^create_graph_from_edgelist (struct packed_edge *IJ_in, int64_t nedge)$/;"	f
+create_graph_from_edgelist	xmt-csr-local/xmt-csr-local.c	/^create_graph_from_edgelist (struct packed_edge *IJ, int64_t nedge)$/;"	f
+create_graph_from_edgelist	xmt-csr/xmt-csr.c	/^create_graph_from_edgelist (struct packed_edge *IJ, int64_t nedge)$/;"	f
+d	generator/splittable_mrg.c	/^  uint_fast32_t a, b, c, d;$/;"	m	struct:mrg_transition_matrix	file:
+data_in_file	mpi/common.h	/^  int data_in_file; \/* 1 for file, 0 for memory *\/$/;"	m	struct:tuple_graph
+datatype	mpi/onesided.c	/^  MPI_Datatype datatype;$/;"	m	struct:gather	file:
+datatype	mpi/onesided.c	/^  MPI_Datatype datatype;$/;"	m	struct:scatter	file:
+datatype	mpi/onesided.c	/^  MPI_Datatype datatype;$/;"	m	struct:scatter_constant	file:
+datatype	mpi/onesided_emul.c	/^  MPI_Datatype datatype;$/;"	m	struct:gather	file:
+datatype	mpi/onesided_emul.c	/^  MPI_Datatype datatype;$/;"	m	struct:scatter	file:
+dcmp	graph500.c	/^dcmp (const void *a, const void *b)$/;"	f	file:
+deallocate_memory	mpi/bfs_replicated.c	/^static void deallocate_memory(void) {$/;"	f	file:
+deallocate_memory	mpi/bfs_replicated_csc.c	/^static void deallocate_memory(void) {$/;"	f	file:
+default_SCALE	options.h	22;"	d
+default_edgefactor	options.h	23;"	d
+deg	seq-list/seq-list.c	/^static int64_t * restrict head, * restrict deg, * restrict next;$/;"	v	file:
+destroy_gather	mpi/onesided.c	/^void destroy_gather(gather* g) {$/;"	f
+destroy_gather	mpi/onesided_emul.c	/^void destroy_gather(gather* g) {$/;"	f
+destroy_graph	omp-csr/omp-csr-old.c	/^destroy_graph (void)$/;"	f
+destroy_graph	omp-csr/omp-csr.c	/^destroy_graph (void)$/;"	f
+destroy_graph	seq-csr/seq-csr.c	/^destroy_graph (void)$/;"	f
+destroy_graph	seq-list/seq-list.c	/^destroy_graph (void)$/;"	f
+destroy_graph	xmt-csr-local/xmt-csr-local.c	/^destroy_graph (void)$/;"	f
+destroy_graph	xmt-csr/xmt-csr.c	/^destroy_graph (void)$/;"	f
+destroy_scatter	mpi/onesided.c	/^void destroy_scatter(scatter* sc) {$/;"	f
+destroy_scatter	mpi/onesided_emul.c	/^void destroy_scatter(scatter* sc) {$/;"	f
+destroy_scatter_constant	mpi/onesided.c	/^void destroy_scatter_constant(scatter_constant* sc) {$/;"	f
+destroy_scatter_constant	mpi/onesided_emul.c	/^void destroy_scatter_constant(scatter_constant* sc) {$/;"	f
+dump_mrg	generator/splittable_mrg.c	/^void dump_mrg(FILE* out, const mrg_transition_matrix* m) {$/;"	f
+dump_mrg_powers	generator/splittable_mrg.c	/^void dump_mrg_powers(void) {$/;"	f
+dumpname	options.c	/^char *dumpname = NULL;$/;"	v
+edgefactor	options.c	/^int64_t edgefactor = default_edgefactor;$/;"	v
+edgefile	mpi/common.h	/^  MPI_File edgefile; \/* Or MPI_FILE_NULL if edges are in memory *\/$/;"	m	struct:tuple_graph
+edgememory	mpi/common.h	/^  packed_edge* restrict edgememory; \/* NULL if edges are in file *\/$/;"	m	struct:tuple_graph
+edgememory_size	mpi/common.h	/^  int64_t edgememory_size;$/;"	m	struct:tuple_graph
+elt_size	mpi/onesided.c	/^  size_t elt_size;$/;"	m	struct:gather	file:
+elt_size	mpi/onesided.c	/^  size_t elt_size;$/;"	m	struct:scatter	file:
+elt_size	mpi/onesided.c	/^  size_t elt_size;$/;"	m	struct:scatter_constant	file:
+elt_size	mpi/onesided_emul.c	/^  size_t elt_size;$/;"	m	struct:gather	file:
+elt_size	mpi/onesided_emul.c	/^  size_t elt_size;$/;"	m	struct:scatter	file:
+elt_size	mpi/onesided_emul.c	/^  size_t elt_size;$/;"	m	struct:scatter_constant	file:
+end	omp-csr/bitmap.h	/^  uint64_t *end;$/;"	m	struct:__anon1
+end_gather	mpi/onesided.c	/^void end_gather(gather* g) {$/;"	f
+end_gather	mpi/onesided_emul.c	/^void end_gather(gather* g) {$/;"	f
+end_scatter	mpi/onesided.c	/^void end_scatter(scatter* sc) {$/;"	f
+end_scatter	mpi/onesided_emul.c	/^void end_scatter(scatter* sc) {$/;"	f
+end_scatter_constant	mpi/onesided.c	/^void end_scatter_constant(scatter_constant* sc) {$/;"	f
+end_scatter_constant	mpi/onesided_emul.c	/^void end_scatter_constant(scatter_constant* sc) {$/;"	f
+exit_handler	xalloc.c	/^exit_handler (void)$/;"	f	file:
+fd	xalloc.c	/^  int fd;$/;"	m	struct:__anon2	file:
+fill_bitmap_from_queue	omp-csr/omp-csr.c	/^fill_bitmap_from_queue(bitmap_t *bm, int64_t *vlist, int64_t out, int64_t in)$/;"	f	file:
+fill_queue_from_bitmap	omp-csr/omp-csr.c	/^fill_queue_from_bitmap(bitmap_t *bm, int64_t *vlist, int64_t *out, int64_t *in,$/;"	f	file:
+find_nv	omp-csr/omp-csr-old.c	/^find_nv (const struct packed_edge * restrict IJ, const int64_t nedge)$/;"	f	file:
+find_nv	omp-csr/omp-csr.c	/^find_nv (const struct packed_edge * restrict IJ, const int64_t nedge)$/;"	f	file:
+find_nv	seq-csr/seq-csr.c	/^find_nv (const struct packed_edge * restrict IJ, const int64_t nedge)$/;"	f	file:
+find_nv	xmt-csr-local/xmt-csr-local.c	/^find_nv (const struct packed_edge * restrict IJ, const int64_t nedge)$/;"	f	file:
+find_nv	xmt-csr/xmt-csr.c	/^find_nv (const struct packed_edge * restrict IJ, const int64_t nedge)$/;"	f	file:
+free_graph	omp-csr/omp-csr-old.c	/^free_graph (void)$/;"	f	file:
+free_graph	omp-csr/omp-csr.c	/^free_graph (void)$/;"	f	file:
+free_graph	seq-csr/seq-csr.c	/^free_graph (void)$/;"	f	file:
+free_graph	xmt-csr-local/xmt-csr-local.c	/^free_graph (void)$/;"	f	file:
+free_graph	xmt-csr/xmt-csr.c	/^free_graph (void)$/;"	f	file:
+free_graph_data_structure	mpi/bfs_custom.c	/^void free_graph_data_structure(void) {$/;"	f
+free_graph_data_structure	mpi/bfs_one_sided.c	/^void free_graph_data_structure(void) {$/;"	f
+free_graph_data_structure	mpi/bfs_replicated.c	/^void free_graph_data_structure(void) {$/;"	f
+free_graph_data_structure	mpi/bfs_replicated_csc.c	/^void free_graph_data_structure(void) {$/;"	f
+free_graph_data_structure	mpi/bfs_simple.c	/^void free_graph_data_structure(void) {$/;"	f
+free_oned_csc_graph	mpi/oned_csc.c	/^void free_oned_csc_graph(oned_csc_graph* const g) {$/;"	f
+free_oned_csr_graph	mpi/oned_csr.c	/^void free_oned_csr_graph(oned_csr_graph* const g) {$/;"	f
+g	mpi/bfs_custom.c	/^static oned_csr_graph g;$/;"	v	file:
+g	mpi/bfs_one_sided.c	/^static oned_csr_graph g;$/;"	v	file:
+g	mpi/bfs_replicated.c	/^static oned_csr_graph g;$/;"	v	file:
+g	mpi/bfs_replicated_csc.c	/^static oned_csc_graph g;$/;"	v	file:
+g	mpi/bfs_simple.c	/^static oned_csr_graph g;$/;"	v	file:
+g_global_queue_size	mpi/bfs_replicated.c	/^static int64_t g_global_queue_size;$/;"	v	file:
+g_global_queue_summary_size	mpi/bfs_replicated.c	/^static int64_t g_global_queue_summary_size;$/;"	v	file:
+g_in_queue	mpi/bfs_replicated.c	/^static unsigned long* g_in_queue;$/;"	v	file:
+g_in_queue	mpi/bfs_replicated_csc.c	/^static unsigned long* g_in_queue;$/;"	v	file:
+g_in_queue_summary	mpi/bfs_replicated.c	/^static unsigned long* g_in_queue_summary;$/;"	v	file:
+g_in_queue_summary	mpi/bfs_replicated_csc.c	/^static unsigned long* g_in_queue_summary;$/;"	v	file:
+g_lg_local_queue_size	mpi/bfs_replicated.c	/^static int g_lg_local_queue_size;$/;"	v	file:
+g_local_queue_size	mpi/bfs_replicated.c	/^static int64_t g_local_queue_size;$/;"	v	file:
+g_local_queue_summary_size	mpi/bfs_replicated.c	/^static int64_t g_local_queue_summary_size;$/;"	v	file:
+g_newq	mpi/bfs_simple.c	/^static int64_t* g_newq;$/;"	v	file:
+g_oldq	mpi/bfs_simple.c	/^static int64_t* g_oldq;$/;"	v	file:
+g_out_queue	mpi/bfs_replicated.c	/^static unsigned long* g_out_queue;$/;"	v	file:
+g_out_queue	mpi/bfs_replicated_csc.c	/^static unsigned long* g_out_queue;$/;"	v	file:
+g_out_queue_summary	mpi/bfs_replicated.c	/^static unsigned long* g_out_queue_summary;$/;"	v	file:
+g_out_queue_summary	mpi/bfs_replicated_csc.c	/^static unsigned long* g_out_queue_summary;$/;"	v	file:
+g_outgoing	mpi/bfs_simple.c	/^static int64_t* g_outgoing;$/;"	v	file:
+g_outgoing_counts	mpi/bfs_simple.c	/^static size_t* g_outgoing_counts \/* 2x actual count *\/;$/;"	v	file:
+g_outgoing_reqs	mpi/bfs_simple.c	/^static MPI_Request* g_outgoing_reqs;$/;"	v	file:
+g_outgoing_reqs_active	mpi/bfs_simple.c	/^static int* g_outgoing_reqs_active;$/;"	v	file:
+g_recvbuf	mpi/bfs_simple.c	/^static int64_t* g_recvbuf;$/;"	v	file:
+g_visited	mpi/bfs_replicated.c	/^static unsigned long* g_visited;$/;"	v	file:
+g_visited	mpi/bfs_replicated_csc.c	/^static unsigned long* g_visited;$/;"	v	file:
+g_visited	mpi/bfs_simple.c	/^static unsigned long* g_visited;$/;"	v	file:
+gather	mpi/onesided.c	/^struct gather {$/;"	s	file:
+gather	mpi/onesided.h	/^typedef struct gather gather;$/;"	t	typeref:struct:gather
+gather	mpi/onesided_emul.c	/^struct gather {$/;"	s	file:
+gather_edges	omp-csr/omp-csr-old.c	/^gather_edges (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+gather_edges	omp-csr/omp-csr.c	/^gather_edges (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+gather_edges	seq-csr/seq-csr.c	/^gather_edges (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+gather_edges	xmt-csr-local/xmt-csr-local.c	/^gather_edges (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+gather_edges	xmt-csr/xmt-csr.c	/^gather_edges (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+generate_4way_bernoulli	generator/graph_generator.c	/^static int generate_4way_bernoulli(mrg_state* st, int level, int nlevels) {$/;"	f	file:
+generate_kronecker_range	generator/graph_generator.c	/^void generate_kronecker_range($/;"	f
+generation_time	graph500.c	/^static double generation_time;$/;"	v	file:
+get_depth_from_pred_entry	mpi/validate.c	/^static inline uint16_t get_depth_from_pred_entry(int64_t val) {$/;"	f	file:
+get_nlocalverts_for_pred	mpi/bfs_custom.c	/^size_t get_nlocalverts_for_pred(void) {$/;"	f
+get_nlocalverts_for_pred	mpi/bfs_one_sided.c	/^size_t get_nlocalverts_for_pred(void) {$/;"	f
+get_nlocalverts_for_pred	mpi/bfs_replicated.c	/^size_t get_nlocalverts_for_pred(void) {$/;"	f
+get_nlocalverts_for_pred	mpi/bfs_replicated_csc.c	/^size_t get_nlocalverts_for_pred(void) {$/;"	f
+get_nlocalverts_for_pred	mpi/bfs_simple.c	/^size_t get_nlocalverts_for_pred(void) {$/;"	f
+get_options	options.c	/^get_options (int argc, char **argv) {$/;"	f
+get_pred_from_pred_entry	mpi/validate.c	/^static inline int64_t get_pred_from_pred_entry(int64_t val) {$/;"	f	file:
+get_statistics	mpi/main.c	/^static void get_statistics(const double x[], int n, double r[s_LAST]) {$/;"	f	file:
+get_time	generator/generator_test_seq.c	/^inline double get_time() {$/;"	f
+get_v0_from_edge	generator/graph_generator.h	/^static inline int64_t get_v0_from_edge(const packed_edge* p) {$/;"	f
+get_v1_from_edge	generator/graph_generator.h	/^static inline int64_t get_v1_from_edge(const packed_edge* p) {$/;"	f
+get_vertex_distribution_for_pred	mpi/bfs_custom.c	/^void get_vertex_distribution_for_pred(size_t count, const int64_t* vertex_p, int* owner_p, size_t* local_p) {$/;"	f
+get_vertex_distribution_for_pred	mpi/bfs_one_sided.c	/^void get_vertex_distribution_for_pred(size_t count, const int64_t* vertex_p, int* owner_p, size_t* local_p) {$/;"	f
+get_vertex_distribution_for_pred	mpi/bfs_replicated.c	/^void get_vertex_distribution_for_pred(size_t count, const int64_t* vertex_p, int* owner_p, size_t* local_p) {$/;"	f
+get_vertex_distribution_for_pred	mpi/bfs_replicated_csc.c	/^void get_vertex_distribution_for_pred(size_t count, const int64_t* vertex_p, int* owner_p, size_t* local_p) {$/;"	f
+get_vertex_distribution_for_pred	mpi/bfs_simple.c	/^void get_vertex_distribution_for_pred(size_t count, const int64_t* vertex_p, int* owner_p, size_t* local_p) {$/;"	f
+head	seq-list/seq-list.c	/^static int64_t * restrict head, * restrict deg, * restrict next;$/;"	v	file:
+high	generator/graph_generator.h	/^  uint32_t high; \/* v1 in high half, v0 in low half *\/$/;"	m	struct:packed_edge
+histogram_sort_MPI_Aint	mpi/onesided_emul.c	/^void histogram_sort_MPI_Aint$/;"	f
+histogram_sort_MPI_Aintcharblock	mpi/onesided_emul.c	/^void histogram_sort_MPI_Aintcharblock$/;"	f
+histogram_sort_size_tMPI_Aint	mpi/onesided_emul.c	/^void histogram_sort_size_tMPI_Aint$/;"	f
+i64cmp	omp-csr/omp-csr-old.c	/^i64cmp (const void *a, const void *b)$/;"	f	file:
+i64cmp	omp-csr/omp-csr.c	/^i64cmp (const void *a, const void *b)$/;"	f	file:
+i64cmp	seq-csr/seq-csr.c	/^i64cmp (const void *a, const void *b)$/;"	f	file:
+i64cmp	xmt-csr-local/xmt-csr-local.c	/^i64cmp (const void *a, const void *b)$/;"	f	file:
+i64cmp	xmt-csr/xmt-csr.c	/^i64cmp (const void *a, const void *b)$/;"	f	file:
+init_gather	mpi/onesided.c	/^gather* init_gather(void* input, size_t input_count, size_t elt_size, void* output, size_t output_count, size_t nrequests_max, MPI_Datatype dt) {$/;"	f
+init_gather	mpi/onesided_emul.c	/^gather* init_gather(void* input, size_t input_count, size_t elt_size, void* output, size_t output_count, size_t nrequests_max, MPI_Datatype dt) {$/;"	f
+init_random	prng.c	/^init_random (void)$/;"	f
+init_scatter	mpi/onesided.c	/^scatter* init_scatter(void* array, size_t array_count, size_t elt_size, size_t nrequests_max, MPI_Datatype dt) {$/;"	f
+init_scatter	mpi/onesided_emul.c	/^scatter* init_scatter(void* array, size_t array_count, size_t elt_size, size_t nrequests_max, MPI_Datatype dt) {$/;"	f
+init_scatter_constant	mpi/onesided.c	/^scatter_constant* init_scatter_constant(void* array, size_t array_count, size_t elt_size, void* constant, size_t nrequests_max, MPI_Datatype dt) {$/;"	f
+init_scatter_constant	mpi/onesided_emul.c	/^scatter_constant* init_scatter_constant(void* array, size_t array_count, size_t elt_size, void* constant, size_t nrequests_max, MPI_Datatype dt \/* unused *\/) {$/;"	f
+input	mpi/onesided.c	/^  void* input;$/;"	m	struct:gather	file:
+input	mpi/onesided_emul.c	/^  void* input;$/;"	m	struct:gather	file:
+input_count	mpi/onesided_emul.c	/^  size_t input_count;$/;"	m	struct:gather	file:
+installed_handler	xalloc.c	/^static int installed_handler = 0;$/;"	v	file:
+int64_cas	omp-csr/omp-csr-old.c	/^int64_cas(int64_t* p, int64_t oldval, int64_t newval)$/;"	f
+int64_cas	omp-csr/omp-csr.c	/^int64_cas(int64_t* p, int64_t oldval, int64_t newval)$/;"	f
+int64_casval	omp-csr/omp-csr-old.c	/^int64_casval(int64_t* p, int64_t oldval, int64_t newval)$/;"	f
+int64_casval	omp-csr/omp-csr.c	/^int64_casval(int64_t* p, int64_t oldval, int64_t newval)$/;"	f
+int64_fetch_add	omp-csr/omp-csr-old.c	/^int64_fetch_add (int64_t* p, int64_t incr)$/;"	f
+int64_fetch_add	omp-csr/omp-csr.c	/^int64_fetch_add (int64_t* p, int64_t incr)$/;"	f
+int64_min	mpi/common.h	/^static inline int64_t int64_min(int64_t a, int64_t b) {$/;"	f
+int64_t	compat.h	/^typedef long int64_t;$/;"	t
+kernel_1	octave/kernel_1.m	/^function G = kernel_1 (ij)$/;"	f
+kernel_2	octave/kernel_2.m	/^function parent = kernel_2 (G, root)$/;"	f
+kronecker_generator	octave/kronecker_generator.m	/^function ij = kronecker_generator (SCALE, edgefactor)$/;"	f
+large_alloc	xalloc.c	/^} large_alloc[MAX_LARGE];$/;"	v	typeref:struct:__anon2	file:
+lg_int64_t	mpi/utils.c	/^int lg_int64_t(int64_t x) { \/* Round up *\/$/;"	f
+lg_local_queue_size	mpi/oned_csc.c	/^  int lg_local_queue_size;$/;"	m	struct:temp_csc_graph	file:
+lg_local_queue_size	mpi/oned_csc.h	/^  int lg_local_queue_size; \/* Queue size for replicated CSC BFS *\/$/;"	m	struct:oned_csc_graph
+lg_nglobalverts	mpi/oned_csc.c	/^  int lg_nglobalverts;$/;"	m	struct:temp_csc_graph	file:
+lg_nglobalverts	mpi/oned_csc.h	/^  int lg_nglobalverts;$/;"	m	struct:oned_csc_graph
+lg_nglobalverts	mpi/oned_csr.c	/^  int lg_nglobalverts;$/;"	m	struct:temp_csr_graph	file:
+lg_nglobalverts	mpi/oned_csr.h	/^  int lg_nglobalverts;$/;"	m	struct:oned_csr_graph
+lgsize	mpi/utils.c	/^int lgsize;$/;"	v
+local_indices	mpi/onesided_emul.c	/^  size_t* local_indices;$/;"	m	struct:gather	file:
+main	generator/generator_test_mpi.c	/^int main(int argc, char* argv[]) {$/;"	f
+main	generator/generator_test_omp.c	/^int main(int argc, char* argv[]) {$/;"	f
+main	generator/generator_test_seq.c	/^int main(int argc, char* argv[]) {$/;"	f
+main	generator/generator_test_xmt.c	/^int main(int argc, char* argv[]) {$/;"	f
+main	generator/splittable_mrg.c	/^int main(int argc, char** argv) {$/;"	f
+main	graph500.c	/^main (int argc, char **argv)$/;"	f
+main	make-edgelist.c	/^main (int argc, char **argv)$/;"	f
+main	mpi/main.c	/^int main(int argc, char** argv) {$/;"	f
+make_bfs_tree	omp-csr/omp-csr-old.c	/^make_bfs_tree (int64_t *bfs_tree_out, int64_t *max_vtx_out,$/;"	f
+make_bfs_tree	omp-csr/omp-csr.c	/^make_bfs_tree (int64_t *bfs_tree_out, int64_t *max_vtx_out,$/;"	f
+make_bfs_tree	seq-csr/seq-csr.c	/^make_bfs_tree (int64_t *bfs_tree_out, int64_t *max_vtx_out,$/;"	f
+make_bfs_tree	seq-list/seq-list.c	/^make_bfs_tree (int64_t *bfs_tree_out, int64_t *max_vtx_out,$/;"	f
+make_bfs_tree	xmt-csr-local/xmt-csr-local.c	/^make_bfs_tree (int64_t *bfs_tree_out, int64_t *max_vtx_out,$/;"	f
+make_bfs_tree	xmt-csr/xmt-csr.c	/^make_bfs_tree (int64_t *bfs_tree_out, int64_t *max_vtx_out,$/;"	f
+make_csc	mpi/oned_csc.c	/^static void make_csc(const packed_edge* restrict const inbuf, temp_csc_graph* restrict const outg \/* Must have memory and nlocalverts\/nglobalverts\/nlocaledges filled in *\/) {$/;"	f	file:
+make_csr	mpi/oned_csr.c	/^static void make_csr(const packed_edge* restrict const inbuf, temp_csr_graph* restrict const outg \/* Must have memory and nlocalverts\/nlocaledges filled in *\/) {$/;"	f	file:
+make_empty_csc	mpi/oned_csc.c	/^static void make_empty_csc(temp_csc_graph* restrict const outg \/* All fields NULL or 0 *\/) {$/;"	f	file:
+make_empty_csr	mpi/oned_csr.c	/^static void make_empty_csr(temp_csr_graph* restrict const outg \/* All fields NULL or 0 *\/) {$/;"	f	file:
+make_graph	generator/make_graph.c	/^void make_graph(int log_numverts, int64_t M, uint64_t userseed1, uint64_t userseed2, int64_t* nedges_ptr, packed_edge** result_ptr) {$/;"	f
+make_graph	generator/make_graph.c	/^void make_graph(int log_numverts, int64_t M, uint64_t userseed1, uint64_t userseed2, int64_t* nedges_ptr_in, packed_edge** result_ptr_in) {$/;"	f
+make_graph_data_structure	mpi/bfs_custom.c	/^void make_graph_data_structure(const tuple_graph* const tg) {$/;"	f
+make_graph_data_structure	mpi/bfs_one_sided.c	/^void make_graph_data_structure(const tuple_graph* const tg) {$/;"	f
+make_graph_data_structure	mpi/bfs_replicated.c	/^void make_graph_data_structure(const tuple_graph* const tg) {$/;"	f
+make_graph_data_structure	mpi/bfs_replicated_csc.c	/^void make_graph_data_structure(const tuple_graph* const tg) {$/;"	f
+make_graph_data_structure	mpi/bfs_simple.c	/^void make_graph_data_structure(const tuple_graph* const tg) {$/;"	f
+make_mrg_seed	generator/utils.c	/^void make_mrg_seed(uint64_t userseed1, uint64_t userseed2, uint_fast32_t* seed) {$/;"	f
+make_mrg_seed	prng.c	/^static void make_mrg_seed(uint64_t userseed, uint_fast32_t* seed) {$/;"	f	file:
+make_one_edge	generator/graph_generator.c	/^void make_one_edge(int64_t nverts, int level, int lgN, mrg_state* st, packed_edge* result, uint64_t val0, uint64_t val1) {$/;"	f	file:
+make_random_numbers	generator/make_graph.c	/^void make_random_numbers($/;"	f
+max_edgememory_size	mpi/common.h	/^  int64_t max_edgememory_size;$/;"	m	struct:tuple_graph
+max_nlocalverts	mpi/oned_csc.h	/^  int64_t max_nlocalverts;$/;"	m	struct:oned_csc_graph
+max_nlocalverts	mpi/oned_csr.h	/^  int64_t max_nlocalverts;$/;"	m	struct:oned_csr_graph
+maxdeg	seq-list/seq-list.c	/^static int64_t maxvtx, maxdeg, nIJ;$/;"	v	file:
+maxvtx	omp-csr/omp-csr-old.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+maxvtx	omp-csr/omp-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+maxvtx	seq-csr/seq-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+maxvtx	seq-list/seq-list.c	/^static int64_t maxvtx, maxdeg, nIJ;$/;"	v	file:
+maxvtx	xmt-csr-local/xmt-csr-local.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+maxvtx	xmt-csr/xmt-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+merge_csc	mpi/oned_csc.c	/^static void merge_csc(temp_csc_graph* restrict const b,$/;"	f	file:
+merge_csr	mpi/oned_csr.c	/^static void merge_csr(temp_csr_graph* restrict const b,$/;"	f	file:
+mod_add	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_add(uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_add	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_add(uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_add	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_add(uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_down	generator/mod_arith_xmt.h	/^static inline uint_fast64_t mod_down(uint_fast64_t x) {$/;"	f
+mod_down_fast	generator/mod_arith_xmt.h	/^static inline uint_fast64_t mod_down_fast(uint_fast64_t x) {$/;"	f
+mod_mac	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mac(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_mac	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mac(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_mac	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mac(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_mac2	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mac2(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d) {$/;"	f
+mod_mac2	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mac2(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d) {$/;"	f
+mod_mac2	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mac2(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d) {$/;"	f
+mod_mac3	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mac3(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d, uint_fast32_t e, uint_fast32_t f) {$/;"	f
+mod_mac3	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mac3(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d, uint_fast32_t e, uint_fast32_t f) {$/;"	f
+mod_mac3	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mac3(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d, uint_fast32_t e, uint_fast32_t f) {$/;"	f
+mod_mac4	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mac4(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d, uint_fast32_t e, uint_fast32_t f, uint_fast32_t g, uint_fast32_t h) {$/;"	f
+mod_mac4	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mac4(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d, uint_fast32_t e, uint_fast32_t f, uint_fast32_t g, uint_fast32_t h) {$/;"	f
+mod_mac4	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mac4(uint_fast32_t sum, uint_fast32_t a, uint_fast32_t b, uint_fast32_t c, uint_fast32_t d, uint_fast32_t e, uint_fast32_t f, uint_fast32_t g, uint_fast32_t h) {$/;"	f
+mod_mac_y	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mac_y(uint_fast32_t sum, uint_fast32_t a) {$/;"	f
+mod_mac_y	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mac_y(uint_fast32_t sum, uint_fast32_t a) {$/;"	f
+mod_mac_y	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mac_y(uint_fast32_t sum, uint_fast32_t a) {$/;"	f
+mod_mul	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mul(uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_mul	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mul(uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_mul	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mul(uint_fast32_t a, uint_fast32_t b) {$/;"	f
+mod_mul_x	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mul_x(uint_fast32_t a) {$/;"	f
+mod_mul_x	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mul_x(uint_fast32_t a) {$/;"	f
+mod_mul_x	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mul_x(uint_fast32_t a) {$/;"	f
+mod_mul_y	generator/mod_arith_32bit.h	/^static inline uint_fast32_t mod_mul_y(uint_fast32_t a) {$/;"	f
+mod_mul_y	generator/mod_arith_64bit.h	/^static inline uint_fast32_t mod_mul_y(uint_fast32_t a) {$/;"	f
+mod_mul_y	generator/mod_arith_xmt.h	/^static inline uint_fast32_t mod_mul_y(uint_fast32_t a) {$/;"	f
+mrg_apply_transition	generator/splittable_mrg.c	/^static void mrg_apply_transition(const mrg_transition_matrix* restrict mat, const mrg_state* restrict st, mrg_state* r) {$/;"	f	file:
+mrg_get_double_orig	generator/splittable_mrg.c	/^double mrg_get_double_orig(mrg_state* state) {$/;"	f
+mrg_get_uint_orig	generator/splittable_mrg.c	/^uint_fast32_t mrg_get_uint_orig(mrg_state* state) {$/;"	f
+mrg_make_A	generator/splittable_mrg.c	/^static void mrg_make_A(mrg_transition_matrix* result) { \/* Initial RNG transition matrix *\/$/;"	f	file:
+mrg_make_identity	generator/splittable_mrg.c	/^static void mrg_make_identity(mrg_transition_matrix* result) {$/;"	f	file:
+mrg_multiply	generator/splittable_mrg.c	/^static void mrg_multiply(const mrg_transition_matrix* restrict m, const mrg_transition_matrix* restrict n, mrg_transition_matrix* result) {$/;"	f	file:
+mrg_orig_step	generator/splittable_mrg.c	/^static void mrg_orig_step(mrg_state* state) { \/* Use original A, not fully optimized yet *\/$/;"	f	file:
+mrg_power	generator/splittable_mrg.c	/^static void mrg_power(const mrg_transition_matrix* restrict m, unsigned int exponent, mrg_transition_matrix* restrict result) {$/;"	f	file:
+mrg_seed	generator/splittable_mrg.c	/^void mrg_seed(mrg_state* st, const uint_fast32_t seed[5]) {$/;"	f
+mrg_skip	generator/splittable_mrg.c	/^void mrg_skip(mrg_state* state, uint_least64_t exponent_high, uint_least64_t exponent_middle, uint_least64_t exponent_low) {$/;"	f
+mrg_skip_matrices	generator/mrg_transitions.c	/^const mrg_transition_matrix mrg_skip_matrices[][256] = {$/;"	v
+mrg_skip_matrices	generator/splittable_mrg.c	/^const mrg_transition_matrix mrg_skip_matrices[][256] = {}; \/* Dummy version *\/$/;"	v
+mrg_state	generator/splittable_mrg.h	/^typedef struct mrg_state {$/;"	s
+mrg_state	generator/splittable_mrg.h	/^} mrg_state;$/;"	t	typeref:struct:mrg_state
+mrg_step	generator/splittable_mrg.c	/^static void mrg_step(const mrg_transition_matrix* mat, mrg_state* state) {$/;"	f	file:
+mrg_transition_matrix	generator/splittable_mrg.c	/^typedef struct mrg_transition_matrix {$/;"	s	file:
+mrg_transition_matrix	generator/splittable_mrg.c	/^} mrg_transition_matrix;$/;"	t	typeref:struct:mrg_transition_matrix	file:
+mrg_update_cache	generator/splittable_mrg.c	/^static void mrg_update_cache(mrg_transition_matrix* restrict p) { \/* Set a, b, c, and d *\/$/;"	f	file:
+nIJ	seq-list/seq-list.c	/^static int64_t maxvtx, maxdeg, nIJ;$/;"	v	file:
+n_large_alloc	xalloc.c	/^static int n_large_alloc = 0;$/;"	v	file:
+nedge	graph500.c	/^static int64_t nedge;$/;"	v	file:
+nedge	make-edgelist.c	/^static int64_t nedge;$/;"	v	file:
+next	seq-list/seq-list.c	/^static int64_t * restrict head, * restrict deg, * restrict next;$/;"	v	file:
+nglobaledges	mpi/common.h	/^  int64_t nglobaledges; \/* Number of edges in graph, in both cases *\/$/;"	m	struct:tuple_graph
+nglobalverts	mpi/oned_csc.c	/^  int64_t nglobalverts;$/;"	m	struct:temp_csc_graph	file:
+nglobalverts	mpi/oned_csc.h	/^  int64_t nglobalverts;$/;"	m	struct:oned_csc_graph
+nglobalverts	mpi/oned_csr.h	/^  int64_t nglobalverts;$/;"	m	struct:oned_csr_graph
+nlocaledges	mpi/oned_csc.c	/^  size_t nlocaledges;$/;"	m	struct:temp_csc_graph	file:
+nlocaledges	mpi/oned_csc.h	/^  size_t nlocaledges;$/;"	m	struct:oned_csc_graph
+nlocaledges	mpi/oned_csr.c	/^  size_t nlocaledges;$/;"	m	struct:temp_csr_graph	file:
+nlocaledges	mpi/oned_csr.h	/^  size_t nlocaledges;$/;"	m	struct:oned_csr_graph
+nlocaledges_allocated	mpi/oned_csc.c	/^  size_t nlocaledges_allocated; \/* Actual size of column *\/$/;"	m	struct:temp_csc_graph	file:
+nlocaledges_allocated	mpi/oned_csr.c	/^  size_t nlocaledges_allocated; \/* Actual size of column *\/$/;"	m	struct:temp_csr_graph	file:
+nlocalverts	mpi/oned_csc.c	/^  size_t nlocalverts;$/;"	m	struct:temp_csc_graph	file:
+nlocalverts	mpi/oned_csc.h	/^  size_t nlocalverts;$/;"	m	struct:oned_csc_graph
+nlocalverts	mpi/oned_csr.c	/^  size_t nlocalverts;$/;"	m	struct:temp_csr_graph	file:
+nlocalverts	mpi/oned_csr.h	/^  size_t nlocalverts;$/;"	m	struct:oned_csr_graph
+nrequests_max	mpi/onesided.c	/^  size_t nrequests_max;$/;"	m	struct:scatter	file:
+nrequests_max	mpi/onesided_emul.c	/^  size_t nrequests_max;$/;"	m	struct:gather	file:
+nrequests_max	mpi/onesided_emul.c	/^  size_t nrequests_max;$/;"	m	struct:scatter	file:
+nrequests_max	mpi/onesided_emul.c	/^  size_t nrequests_max;$/;"	m	struct:scatter_constant	file:
+nrows	mpi/oned_csc.c	/^  size_t nrows; \/* One less than size of rowstarts *\/$/;"	m	struct:temp_csc_graph	file:
+numa_avail	generator/utils.c	/^static int numa_avail = -1;$/;"	v	file:
+numa_inited	generator/utils.c	/^static int numa_inited = 0;$/;"	v	file:
+nv	omp-csr/omp-csr-old.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+nv	omp-csr/omp-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+nv	seq-csr/seq-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+nv	xmt-csr-local/xmt-csr-local.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+nv	xmt-csr/xmt-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+nvtx_scale	graph500.c	/^static int64_t nvtx_scale;$/;"	v	file:
+nvtx_scale	make-edgelist.c	/^static int64_t nvtx_scale;$/;"	v	file:
+old_abort_handler	xalloc.c	/^static void (*old_abort_handler)(int);$/;"	v	file:
+omp_get_num_threads	compat.h	/^int omp_get_num_threads (void) { return 1; }$/;"	f
+omp_get_num_threads	compat.h	/^static int omp_get_num_threads (void) { return 1; }$/;"	f
+omp_get_thread_num	compat.h	/^int omp_get_thread_num (void) { return 0; }$/;"	f
+omp_get_thread_num	compat.h	/^static int omp_get_thread_num (void) { return 0; }$/;"	f
+oned_csc_graph	mpi/oned_csc.h	/^typedef struct oned_csc_graph {$/;"	s
+oned_csc_graph	mpi/oned_csc.h	/^} oned_csc_graph;$/;"	t	typeref:struct:oned_csc_graph
+oned_csr_graph	mpi/oned_csr.h	/^typedef struct oned_csr_graph {$/;"	s
+oned_csr_graph	mpi/oned_csr.h	/^} oned_csr_graph;$/;"	t	typeref:struct:oned_csr_graph
+output	mpi/onesided.c	/^  void* output;$/;"	m	struct:gather	file:
+output	mpi/onesided_emul.c	/^  void* output;$/;"	m	struct:gather	file:
+output	octave/output.m	/^function output (SCALE, edgefactor, NBFS, kernel_1_time, kernel_2_time, kernel_2_nedge)$/;"	f
+output_count	mpi/onesided_emul.c	/^  size_t output_count;$/;"	m	struct:gather	file:
+output_results	graph500.c	/^output_results (const int64_t SCALE, int64_t nvtx_scale, int64_t edgefactor,$/;"	f
+p	xalloc.c	/^  void * p;$/;"	m	struct:__anon2	file:
+pack_edges	omp-csr/omp-csr-old.c	/^pack_edges (void)$/;"	f	file:
+pack_edges	omp-csr/omp-csr.c	/^pack_edges (void)$/;"	f	file:
+pack_edges	seq-csr/seq-csr.c	/^pack_edges (void)$/;"	f	file:
+pack_edges	xmt-csr-local/xmt-csr-local.c	/^pack_edges (void)$/;"	f	file:
+pack_edges	xmt-csr/xmt-csr.c	/^pack_edges (void)$/;"	f	file:
+pack_vtx_edges	omp-csr/omp-csr-old.c	/^pack_vtx_edges (const int64_t i)$/;"	f	file:
+pack_vtx_edges	omp-csr/omp-csr.c	/^pack_vtx_edges (const int64_t i)$/;"	f	file:
+pack_vtx_edges	seq-csr/seq-csr.c	/^pack_vtx_edges (const int64_t i)$/;"	f	file:
+packed_edge	generator/graph_generator.h	/^typedef struct packed_edge {$/;"	s
+packed_edge	generator/graph_generator.h	/^} packed_edge;$/;"	t	typeref:struct:packed_edge
+packed_edge_mpi_type	mpi/utils.c	/^MPI_Datatype packed_edge_mpi_type;$/;"	v
+permute_edgelist	rmat.c	/^permute_edgelist (struct packed_edge * restrict IJ, int64_t nedge, mrg_state *st)$/;"	f
+prefix_sum	omp-csr/omp-csr-old.c	/^prefix_sum (int64_t *buf)$/;"	f	file:
+prefix_sum	omp-csr/omp-csr.c	/^prefix_sum (int64_t *buf)$/;"	f	file:
+prng_seed	prng.c	/^uint_fast32_t prng_seed[5];$/;"	v
+prng_state	prng.c	/^void *prng_state = &prng_state_store;$/;"	v
+prng_state_store	prng.c	/^static mrg_state prng_state_store;$/;"	v	file:
+ptrdiff_min	mpi/common.h	/^static inline ptrdiff_t ptrdiff_min(ptrdiff_t a, ptrdiff_t b) {$/;"	f
+rank	mpi/utils.c	/^int rank, size;$/;"	v
+recv_counts	mpi/onesided_emul.c	/^  int* recv_counts;$/;"	m	struct:gather	file:
+recv_counts	mpi/onesided_emul.c	/^  int* recv_counts;$/;"	m	struct:scatter	file:
+recv_counts	mpi/onesided_emul.c	/^  int* recv_counts;$/;"	m	struct:scatter_constant	file:
+recv_offsets	mpi/onesided_emul.c	/^  int* recv_offsets;$/;"	m	struct:gather	file:
+recv_offsets	mpi/onesided_emul.c	/^  int* recv_offsets;$/;"	m	struct:scatter	file:
+recv_offsets	mpi/onesided_emul.c	/^  int* recv_offsets;$/;"	m	struct:scatter_constant	file:
+release_i64	rmat.c	/^release_i64 (volatile int64_t *p, int64_t val)$/;"	f
+release_pe	rmat.c	/^release_pe (volatile struct packed_edge *p, struct packed_edge val)$/;"	f
+remote_indices	mpi/onesided_emul.c	/^  MPI_Aint* remote_indices;$/;"	m	struct:gather	file:
+remote_indices	mpi/onesided_emul.c	/^  MPI_Aint* remote_indices;$/;"	m	struct:scatter	file:
+remote_indices	mpi/onesided_emul.c	/^  MPI_Aint* remote_indices;$/;"	m	struct:scatter_constant	file:
+remote_ranks	mpi/onesided_emul.c	/^  int* remote_ranks;$/;"	m	struct:gather	file:
+remote_ranks	mpi/onesided_emul.c	/^  int* remote_ranks;$/;"	m	struct:scatter	file:
+remote_ranks	mpi/onesided_emul.c	/^  int* remote_ranks;$/;"	m	struct:scatter_constant	file:
+request_count	mpi/onesided.c	/^  size_t request_count;$/;"	m	struct:scatter	file:
+restrict	compat.h	26;"	d
+rmat_edge	rmat.c	/^rmat_edge (struct packed_edge *out, int SCALE,$/;"	f	file:
+rmat_edgelist	rmat.c	/^rmat_edgelist (struct packed_edge *IJ_in, int64_t nedge, int SCALE,$/;"	f
+rootname	options.c	/^char *rootname = NULL;$/;"	v
+rowstarts	mpi/oned_csc.c	/^  size_t* restrict rowstarts;$/;"	m	struct:temp_csc_graph	file:
+rowstarts	mpi/oned_csc.h	/^  size_t *rowstarts;$/;"	m	struct:oned_csc_graph
+rowstarts	mpi/oned_csr.c	/^  size_t* restrict rowstarts;$/;"	m	struct:temp_csr_graph	file:
+rowstarts	mpi/oned_csr.h	/^  size_t *rowstarts;$/;"	m	struct:oned_csr_graph
+run_bfs	graph500.c	/^run_bfs (void)$/;"	f
+run_bfs	mpi/bfs_custom.c	/^void run_bfs(int64_t root, int64_t* pred) {$/;"	f
+run_bfs	mpi/bfs_one_sided.c	/^void run_bfs(int64_t root, int64_t* pred) {$/;"	f
+run_bfs	mpi/bfs_replicated.c	/^void run_bfs(int64_t root, int64_t* pred) {$/;"	f
+run_bfs	mpi/bfs_replicated_csc.c	/^void run_bfs(int64_t root, int64_t* pred) {$/;"	f
+run_bfs	mpi/bfs_simple.c	/^void run_bfs(int64_t root, int64_t* pred) {$/;"	f
+s	generator/splittable_mrg.c	/^  uint_fast32_t s, t, u, v, w;$/;"	m	struct:mrg_transition_matrix	file:
+s_LAST	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+s_firstquartile	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+s_maximum	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+s_mean	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+s_median	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+s_minimum	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+s_std	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+s_thirdquartile	mpi/main.c	/^enum {s_minimum, s_firstquartile, s_median, s_thirdquartile, s_maximum, s_mean, s_std, s_LAST};$/;"	e	enum:__anon3	file:
+scatter	mpi/onesided.c	/^struct scatter {$/;"	s	file:
+scatter	mpi/onesided.h	/^typedef struct scatter scatter;$/;"	t	typeref:struct:scatter
+scatter	mpi/onesided_emul.c	/^struct scatter {$/;"	s	file:
+scatter_constant	mpi/onesided.c	/^struct scatter_constant {$/;"	s	file:
+scatter_constant	mpi/onesided.h	/^typedef struct scatter_constant scatter_constant;$/;"	t	typeref:struct:scatter_constant
+scatter_constant	mpi/onesided_emul.c	/^struct scatter_constant {$/;"	s	file:
+scatter_edge	omp-csr/omp-csr-old.c	/^scatter_edge (const int64_t i, const int64_t j)$/;"	f	file:
+scatter_edge	omp-csr/omp-csr.c	/^scatter_edge (const int64_t i, const int64_t j)$/;"	f	file:
+scatter_edge	seq-csr/seq-csr.c	/^scatter_edge (const int64_t i, const int64_t j)$/;"	f	file:
+scatter_edge	xmt-csr-local/xmt-csr-local.c	/^scatter_edge (const int64_t i, const int64_t j)$/;"	f	file:
+scatter_edge	xmt-csr/xmt-csr.c	/^scatter_edge (const int64_t i, const int64_t j)$/;"	f	file:
+scramble	generator/graph_generator.c	/^static inline int64_t scramble(int64_t v0, int lgN, uint64_t val0, uint64_t val1) {$/;"	f	file:
+send_counts	mpi/onesided_emul.c	/^  int* send_counts;$/;"	m	struct:gather	file:
+send_counts	mpi/onesided_emul.c	/^  int* send_counts;$/;"	m	struct:scatter	file:
+send_counts	mpi/onesided_emul.c	/^  int* send_counts;$/;"	m	struct:scatter_constant	file:
+send_data	mpi/onesided.c	/^  char* send_data;$/;"	m	struct:scatter	file:
+send_data	mpi/onesided_emul.c	/^  char* send_data;$/;"	m	struct:scatter	file:
+send_offsets	mpi/onesided_emul.c	/^  int* send_offsets;$/;"	m	struct:gather	file:
+send_offsets	mpi/onesided_emul.c	/^  int* send_offsets;$/;"	m	struct:scatter	file:
+send_offsets	mpi/onesided_emul.c	/^  int* send_offsets;$/;"	m	struct:scatter_constant	file:
+setup_deg_off	omp-csr/omp-csr-old.c	/^setup_deg_off (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+setup_deg_off	omp-csr/omp-csr.c	/^setup_deg_off (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+setup_deg_off	seq-csr/seq-csr.c	/^setup_deg_off (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+setup_deg_off	xmt-csr-local/xmt-csr-local.c	/^setup_deg_off (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+setup_deg_off	xmt-csr/xmt-csr.c	/^setup_deg_off (const struct packed_edge * restrict IJ, int64_t nedge)$/;"	f	file:
+setup_globals	mpi/utils.c	/^void setup_globals() {$/;"	f
+size	mpi/utils.c	/^int rank, size;$/;"	v
+size_min	mpi/common.h	/^static inline size_t size_min(size_t a, size_t b) {$/;"	f
+start	omp-csr/bitmap.h	/^  uint64_t *start;$/;"	m	struct:__anon1
+statistics	graph500.c	/^statistics (double *out, double *data, int64_t n)$/;"	f
+sz	omp-csr/omp-csr-old.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+sz	omp-csr/omp-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+sz	seq-csr/seq-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+sz	xalloc.c	/^  size_t sz;$/;"	m	struct:__anon2	file:
+sz	xmt-csr-local/xmt-csr-local.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+sz	xmt-csr/xmt-csr.c	/^static int64_t maxvtx, nv, sz;$/;"	v	file:
+t	generator/splittable_mrg.c	/^  uint_fast32_t s, t, u, v, w;$/;"	m	struct:mrg_transition_matrix	file:
+take_i64	rmat.c	/^take_i64 (volatile int64_t *p)$/;"	f
+take_pe	rmat.c	/^take_pe (volatile struct packed_edge *p)$/;"	f
+temp_csc_graph	mpi/oned_csc.c	/^typedef struct temp_csc_graph {$/;"	s	file:
+temp_csc_graph	mpi/oned_csc.c	/^} temp_csc_graph;$/;"	t	typeref:struct:temp_csc_graph	file:
+temp_csr_graph	mpi/oned_csr.c	/^typedef struct temp_csr_graph {$/;"	s	file:
+temp_csr_graph	mpi/oned_csr.c	/^} temp_csr_graph;$/;"	t	typeref:struct:temp_csr_graph	file:
+tg	mpi/oned_csc.h	/^  const tuple_graph* tg; \/* Original graph used to build this one *\/$/;"	m	struct:oned_csc_graph
+tg	mpi/oned_csr.h	/^  const tuple_graph* tg; \/* Original graph used to build this one *\/$/;"	m	struct:oned_csr_graph
+tic	timer.c	/^tic (void)$/;"	f
+tic_ts	timer.c	/^long tic_ts;$/;"	v
+tic_ts	timer.c	/^static AbsoluteTime tic_ts;$/;"	v	file:
+tic_ts	timer.c	/^static struct timespec tic_ts;$/;"	v	typeref:struct:timespec	file:
+tic_ts	timer.c	/^static uint64_t tic_ts;$/;"	v	file:
+toc	timer.c	/^toc (void)$/;"	f
+tuple_graph	mpi/common.h	/^typedef struct tuple_graph {$/;"	s
+tuple_graph	mpi/common.h	/^} tuple_graph;$/;"	t	typeref:struct:tuple_graph
+tuple_graph_max_bufsize	mpi/common.h	/^static inline int64_t tuple_graph_max_bufsize(const tuple_graph* tg) {$/;"	f
+u	generator/splittable_mrg.c	/^  uint_fast32_t s, t, u, v, w;$/;"	m	struct:mrg_transition_matrix	file:
+uint32_fast_t	compat.h	/^typedef unsigned uint32_fast_t;$/;"	t
+ulong_bits	mpi/common.h	/^static const int ulong_bits = sizeof(unsigned long) * CHAR_BIT;$/;"	v
+ulong_bits_squared	mpi/common.h	/^static const int ulong_bits_squared = sizeof(unsigned long) * sizeof(unsigned long) * CHAR_BIT * CHAR_BIT;$/;"	v
+use_RMAT	options.c	/^int use_RMAT = 0;$/;"	v
+userseed	prng.c	/^uint64_t userseed;$/;"	v
+v	generator/splittable_mrg.c	/^  uint_fast32_t s, t, u, v, w;$/;"	m	struct:mrg_transition_matrix	file:
+v0	generator/graph_generator.h	/^  int64_t v0;$/;"	m	struct:packed_edge
+v0_low	generator/graph_generator.h	/^  uint32_t v0_low;$/;"	m	struct:packed_edge
+v1	generator/graph_generator.h	/^  int64_t v1;$/;"	m	struct:packed_edge
+v1_low	generator/graph_generator.h	/^  uint32_t v1_low;$/;"	m	struct:packed_edge
+valid	mpi/onesided.c	/^  int valid;$/;"	m	struct:gather	file:
+valid	mpi/onesided.c	/^  int valid;$/;"	m	struct:scatter	file:
+valid	mpi/onesided.c	/^  int valid;$/;"	m	struct:scatter_constant	file:
+valid	mpi/onesided_emul.c	/^  int valid;$/;"	m	struct:gather	file:
+valid	mpi/onesided_emul.c	/^  int valid;$/;"	m	struct:scatter	file:
+valid	mpi/onesided_emul.c	/^  int valid;$/;"	m	struct:scatter_constant	file:
+validate	octave/validate.m	/^function out = validate (parent, ij, search_key)$/;"	f
+validate_bfs_result	mpi/validate.c	/^int validate_bfs_result(const tuple_graph* const tg, const int64_t nglobalverts, const size_t nlocalverts, const int64_t root, int64_t* const pred, int64_t* const edge_visit_count_ptr) {$/;"	f
+verify_bfs_tree	verify.c	/^verify_bfs_tree (int64_t *bfs_tree_in, int64_t max_bfsvtx,$/;"	f
+vertex_to_global_for_pred	mpi/bfs_custom.c	/^int64_t vertex_to_global_for_pred(int v_rank, size_t v_local) {$/;"	f
+vertex_to_global_for_pred	mpi/bfs_one_sided.c	/^int64_t vertex_to_global_for_pred(int v_rank, size_t v_local) {$/;"	f
+vertex_to_global_for_pred	mpi/bfs_replicated.c	/^int64_t vertex_to_global_for_pred(int v_rank, size_t v_local) {$/;"	f
+vertex_to_global_for_pred	mpi/bfs_replicated_csc.c	/^int64_t vertex_to_global_for_pred(int v_rank, size_t v_local) {$/;"	f
+vertex_to_global_for_pred	mpi/bfs_simple.c	/^int64_t vertex_to_global_for_pred(int v_rank, size_t v_local) {$/;"	f
+w	generator/splittable_mrg.c	/^  uint_fast32_t s, t, u, v, w;$/;"	m	struct:mrg_transition_matrix	file:
+win	mpi/onesided.c	/^  MPI_Win win;$/;"	m	struct:gather	file:
+win	mpi/onesided.c	/^  MPI_Win win;$/;"	m	struct:scatter	file:
+win	mpi/onesided.c	/^  MPI_Win win;$/;"	m	struct:scatter_constant	file:
+write_edge	generator/graph_generator.h	/^static inline void write_edge(packed_edge* p, int64_t v0, int64_t v1) {$/;"	f
+write_file	mpi/common.h	/^  int write_file; \/* 1 if the file needs written, 0 if re-used and read *\/$/;"	m	struct:tuple_graph
+write_pred_entry_depth	mpi/validate.c	/^static inline void write_pred_entry_depth(int64_t* loc, uint16_t depth) {$/;"	f	file:
+xMPI_Alloc_mem	mpi/utils.c	/^void* xMPI_Alloc_mem(size_t nbytes) {$/;"	f
+xadj	omp-csr/omp-csr-old.c	/^static int64_t * restrict xadj;$/;"	v	file:
+xadj	omp-csr/omp-csr.c	/^static int64_t * restrict xadj;$/;"	v	file:
+xadj	seq-csr/seq-csr.c	/^static int64_t * restrict xadj;$/;"	v	file:
+xadj	xmt-csr-local/xmt-csr-local.c	/^static int64_t * restrict xadj;$/;"	v	file:
+xadj	xmt-csr/xmt-csr.c	/^static int64_t * restrict xadj;$/;"	v	file:
+xadjstore	omp-csr/omp-csr-old.c	/^static int64_t * restrict xadjstore; \/* Length MINVECT_SIZE + (xoff[nv] == nedge) *\/$/;"	v	file:
+xadjstore	omp-csr/omp-csr.c	/^static int64_t * restrict xadjstore; \/* Length MINVECT_SIZE + (xoff[nv] == nedge) *\/$/;"	v	file:
+xadjstore	seq-csr/seq-csr.c	/^static int64_t * restrict xadjstore; \/* Length MINVECT_SIZE + (xoff[nv] == nedge) *\/$/;"	v	file:
+xadjstore	xmt-csr-local/xmt-csr-local.c	/^static int64_t * restrict xadjstore; \/* Length MINVECT_SIZE + (xoff[nv] == nedge) *\/$/;"	v	file:
+xadjstore	xmt-csr/xmt-csr.c	/^static int64_t * restrict xadjstore; \/* Length MINVECT_SIZE + (xoff[nv] == nedge) *\/$/;"	v	file:
+xcalloc	generator/utils.c	/^xcalloc (size_t n, size_t sz)$/;"	f
+xfree	generator/utils.c	/^xfree (void * p, size_t sz)$/;"	f
+xfree_large	xalloc.c	/^xfree_large (void *p)$/;"	f
+xmalloc	generator/utils.c	/^xmalloc (size_t sz)$/;"	f
+xmalloc_large	xalloc.c	/^xmalloc_large (size_t sz)$/;"	f
+xmalloc_large_ext	xalloc.c	/^xmalloc_large_ext (size_t sz)$/;"	f
+xoff	omp-csr/omp-csr-old.c	/^static int64_t * restrict xoff; \/* Length 2*nv+2 *\/$/;"	v	file:
+xoff	omp-csr/omp-csr.c	/^static int64_t * restrict xoff; \/* Length 2*nv+2 *\/$/;"	v	file:
+xoff	seq-csr/seq-csr.c	/^static int64_t * restrict xoff; \/* Length 2*nv+2 *\/$/;"	v	file:
+xoff	xmt-csr-local/xmt-csr-local.c	/^static int64_t * restrict xoff; \/* Length 2*nv+2 *\/$/;"	v	file:
+xoff	xmt-csr/xmt-csr.c	/^static int64_t * restrict xoff; \/* Length 2*nv+2 *\/$/;"	v	file:
+xrealloc	mpi/utils.c	/^void* xrealloc(void* p, size_t nbytes) {$/;"	f
+z1	generator/splittable_mrg.h	/^  uint_fast32_t z1, z2, z3, z4, z5;$/;"	m	struct:mrg_state
+z2	generator/splittable_mrg.h	/^  uint_fast32_t z1, z2, z3, z4, z5;$/;"	m	struct:mrg_state
+z3	generator/splittable_mrg.h	/^  uint_fast32_t z1, z2, z3, z4, z5;$/;"	m	struct:mrg_state
+z4	generator/splittable_mrg.h	/^  uint_fast32_t z1, z2, z3, z4, z5;$/;"	m	struct:mrg_state
+z5	generator/splittable_mrg.h	/^  uint_fast32_t z1, z2, z3, z4, z5;$/;"	m	struct:mrg_state
